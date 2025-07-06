@@ -1,4 +1,6 @@
 # Trading Control
+A Rimworld Mod, hosted on the Workshop[https://steamcommunity.com/sharedfiles/filedetails/?id=2007107588]
+
 
 ### What it does.
 This allows you to designate where you want Trade Caravans and Guests to set up shop, then lets you tell the Traders when to move on!
