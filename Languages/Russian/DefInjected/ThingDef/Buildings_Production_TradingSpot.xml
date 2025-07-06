@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TradingControl.label>торговое место</TradingControl.label>
+  <TradingControl.description>Обозначает место, где торговцы станут останавливаться при посещении поселения.</TradingControl.description>
+  <TradingControl_Blueprint.label>торговое место (проект)</TradingControl_Blueprint.label>
+  <TradingControl_Frame.label>торговое место (обустраивается)</TradingControl_Frame.label>
+  <TradingControl_Frame.description>Обозначает место, где торговцы станут останавливаться при посещении поселения.</TradingControl_Frame.description>
+
+</LanguageData>

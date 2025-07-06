@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TradingControl.label>交易點</TradingControl.label>
+  <TradingControl.description>指定交易者在訪問您的殖民地時的停留地點。</TradingControl.description>
+</LanguageData>

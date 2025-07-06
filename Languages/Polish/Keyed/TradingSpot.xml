@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<TradingControl>Trading Spot</TradingControl>
+	<TradingControl.AlreadyOnMap>Tylko jedno miejsce handlu dozwolone na mapę. Usuwanie starego miejsca.</TradingControl.AlreadyOnMap>
+	<TradingControl.VisitorsGoToTradeSpot>Goście udają się na miejsce handlu</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TradingControl>Trading Spot</TradingControl>
+  <TradingControl.AlreadyOnMap>マップごとにトレード地点は1ヶ所だけ許可されます.以前の場所は削除されます.</TradingControl.AlreadyOnMap>
+  <TradingControl.OrbitTraderAlreadyOnMap>マップごとに軌道投下地点は1ヵ所だけ許可されます.以前の地点は削除されます.</TradingControl.OrbitTraderAlreadyOnMap>
+  <TradingControl.TradersGoToTradeSpot>トレーダーをトレード地点に向かわせる</TradingControl.TradersGoToTradeSpot>
+  <TradingControl.VisitorsGoToTradeSpot>訪問者をトレード地点に向かわせる</TradingControl.VisitorsGoToTradeSpot>
+  <TradingControl.TradingSpotEnabled>トレード地点を有効にする？</TradingControl.TradingSpotEnabled>
+  <TradingControl.MaxTradeSpot>マップ上の最大トレード地点数：</TradingControl.MaxTradeSpot>
+  <TradingControl.punchThroughEnabled>軌道投下は屋根を貫通しますか？</TradingControl.punchThroughEnabled>
+  <TradingControl.Dismiss>送り返す：</TradingControl.Dismiss>
+</LanguageData>

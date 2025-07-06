@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<TradingControl>Trading Spot</TradingControl>
+	<TradingControl.AlreadyOnMap>Only one Caravan trading spot allowed per map. Removing old spot.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>Only one Orbital drop spot allowed per map. Removing old spot.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Traders go to Trading Spot</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Visitors go to Trading Spot</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>Enable Trading Spot?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Maximum Trading spots on the map:  </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>Can orbital drops go through roofs?</TradingControl.punchThroughEnabled>
+	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+</LanguageData>

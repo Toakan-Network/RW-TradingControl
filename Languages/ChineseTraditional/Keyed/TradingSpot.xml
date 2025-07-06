@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <TradingControl>交易點</TradingControl>
+  <TradingControl.AlreadyOnMap>每張地圖僅允許一個交易點。 去除舊點。</TradingControl.AlreadyOnMap>
+  <TradingControl.VisitorsGoToTradeSpot>參觀者去交易地點</TradingControl.VisitorsGoToTradeSpot>
+  <TradingControl.Dismiss>遣散: </TradingControl.Dismiss>
+</LanguageData>
