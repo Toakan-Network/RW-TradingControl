@@ -1,5 +1,5 @@
 # Trading Control
-A Rimworld Mod, hosted on the Workshop[https://steamcommunity.com/sharedfiles/filedetails/?id=2007107588]
+A Rimworld Mod, hosted on the [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2007107588)
 
 
 ### What it does.
