@@ -28,11 +28,11 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
 
       - name: Restore Packages
-        run: nuget restore Source\RW-TradingControl.sln
+        run: nuget restore Source\TradingControl.sln
 
       - name: Build solution
         run: |
-          & "$env:MSBUILD_PATH" Source\RW-TradingControl.sln -t:rebuild -property:Configuration=Debug
+          & "$env:MSBUILD_PATH" Source\TradingControl.sln -t:rebuild -property:Configuration=Debug
         shell: powershell
       
       - name: Upload build artifacts
