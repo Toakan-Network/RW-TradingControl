@@ -10,7 +10,9 @@ on:
 
 jobs:
   release:
-    runs-on: [self-hosted, Windows]
+    runs-on: 
+      group: ToakanLab
+      labels: Windows
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
