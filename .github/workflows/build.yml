@@ -32,14 +32,14 @@ jobs:
 
       - name: Build solution
         run: |
-          & "$env:MSBUILD_PATH" Source\TradingControl.sln -t:rebuild -property:Configuration=Debug
+          & "$env:MSBUILD_PATH" Source\TradingControl.sln -t:rebuild -property:Configuration=Release
         shell: powershell
       
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: RW-TradingControl-dll
-          path: Source/bin/Release/TradingControl.dll
+          path: Source/bin/x64/Release/TradingControl.dll
       
       - name: Cleanup build files
         run: |
