@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: RW-TradingControl-dll
-          path: Source/bin/x64/Release/TradingControl.dll
+          path: Source/bin/Release/TradingControl.dll
       
       - name: Cleanup build files
         run: |
