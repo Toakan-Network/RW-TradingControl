@@ -1,0 +1,5 @@
+Z:\Git\rimworld-tradingspot\Source\bin\x64\Debug\TradingControl.dll
+Z:\Git\rimworld-tradingspot\Source\bin\x64\Debug\TradingControl.pdb
+Z:\Git\rimworld-tradingspot\Source\obj\x64\Debug\TradingControl.csproj.CoreCompileInputs.cache
+Z:\Git\rimworld-tradingspot\Source\obj\x64\Debug\TradingControl.dll
+Z:\Git\rimworld-tradingspot\Source\obj\x64\Debug\TradingControl.pdb
