@@ -33,7 +33,11 @@ jobs:
       - name: Prepare Assemblies folder
         run: |
           New-Item -ItemType Directory -Force -Path Assemblies
-          Copy-Item ./artifacts/RW-TradingControl.dll Assemblies/
+          # List what's actually in the artifacts folder
+          Write-Host "Contents of artifacts folder:"
+          Get-ChildItem ./artifacts
+          # Copy the correct file name
+          Copy-Item ./artifacts/TradingControl.dll default/Assemblies/
         shell: powershell
       
       - name: Create Release Zip
@@ -45,11 +49,15 @@ jobs:
           }
           New-Item -ItemType Directory -Force -Path $releaseDir
           
-          # Copy specific directories and files we want in the release
-          Copy-Item "About" -Destination "$releaseDir\About" -Recurse -Force
-          Copy-Item "Assemblies" -Destination "$releaseDir\Assemblies" -Recurse -Force
-          Copy-Item "LICENSE" -Destination "$releaseDir\LICENSE" -Force
-          Copy-Item "README.md" -Destination "$releaseDir\README.md" -Force
+          # Copy everything except excluded items
+          $excludeItems = @("Source", ".github", ".gitignore", "README.md", "release-temp", "artifacts", "TradingControl-Release.zip")
+          
+          Get-ChildItem -Force | Where-Object { 
+            $_.Name -notin $excludeItems 
+          } | ForEach-Object {
+            Write-Host "Copying: $($_.Name)"
+            Copy-Item $_.FullName -Destination "$releaseDir\$($_.Name)" -Recurse -Force
+          }
           
           # Create zip from the clean directory
           Compress-Archive -Path "$releaseDir\*" -DestinationPath TradingControl-Release.zip -Force
