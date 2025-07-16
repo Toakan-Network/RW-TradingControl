@@ -1,0 +1,76 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: [self-hosted, windows]
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup MSBuild Path
+        run: |
+          $msbuildPath = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+          echo "MSBUILD_PATH=$msbuildPath" >> $env:GITHUB_ENV
+        shell: powershell 
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Restore Packages
+        run: nuget restore Source\RW-TradingControl.sln
+
+      - name: Build solution
+        run: |
+          & "$env:MSBUILD_PATH" Source\RW-TradingControl.sln -t:rebuild -property:Configuration=Debug
+        shell: powershell
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: RW-TradingControl-dll
+          path: Source/bin/Release/TradingControl.dll
+      
+      - name: Cleanup build files
+        run: |
+          # Remove build output directories
+          if (Test-Path "Source\bin") {
+            Remove-Item -Recurse -Force "Source\bin"
+            Write-Host "Removed Source\bin directory"
+          }
+          if (Test-Path "Source\obj") {
+            Remove-Item -Recurse -Force "Source\obj"
+            Write-Host "Removed Source\obj directory"
+          }
+          
+          # Remove any package restore artifacts
+          if (Test-Path "packages") {
+            Remove-Item -Recurse -Force "packages"
+            Write-Host "Removed packages directory"
+          }
+          
+          Write-Host "Build cleanup completed"
+        shell: powershell
+      
+      - name: Cleanup workspace
+        if: always()
+        run: |
+          # Clean up the workspace contents (but not the workspace directory itself)
+          Get-ChildItem -Force | ForEach-Object {
+            try {
+              Remove-Item -Path $_.FullName -Recurse -Force
+              Write-Host "Removed: $($_.Name)"
+            } catch {
+              Write-Host "Could not remove: $($_.Name) - $($_.Exception.Message)"
+            }
+          }
+          Write-Host "Workspace cleanup completed"
+        shell: powershell

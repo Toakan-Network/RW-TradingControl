@@ -1,0 +1,148 @@
+name: release
+
+on:
+  workflow_run:
+    workflows: ["build"]
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: [self-hosted, windows]
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+        
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: RW-TradingControl-dll
+          path: ./artifacts
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ github.event.workflow_run.id }}
+      
+      - name: Prepare Assemblies folder
+        run: |
+          New-Item -ItemType Directory -Force -Path Assemblies
+          Copy-Item ./artifacts/RW-TradingControl.dll Assemblies/
+        shell: powershell
+      
+      - name: Create Release Zip
+        run: |
+          # Create a clean temporary directory for the release
+          $releaseDir = "release-temp"
+          if (Test-Path $releaseDir) {
+            Remove-Item -Recurse -Force $releaseDir
+          }
+          New-Item -ItemType Directory -Force -Path $releaseDir
+          
+          # Copy specific directories and files we want in the release
+          Copy-Item "About" -Destination "$releaseDir\About" -Recurse -Force
+          Copy-Item "Assemblies" -Destination "$releaseDir\Assemblies" -Recurse -Force
+          Copy-Item "LICENSE" -Destination "$releaseDir\LICENSE" -Force
+          Copy-Item "README.md" -Destination "$releaseDir\README.md" -Force
+          
+          # Create zip from the clean directory
+          Compress-Archive -Path "$releaseDir\*" -DestinationPath TradingControl-Release.zip -Force
+          
+          # Clean up temp directory
+          Remove-Item -Recurse -Force $releaseDir
+        shell: powershell
+      
+      - name: Get commit messages since last release
+        id: get_commits
+        run: |
+          # Get the latest release tag
+          $ErrorActionPreference = "SilentlyContinue"
+          $latestTag = git describe --tags --abbrev=0 2>$null
+          $ErrorActionPreference = "Stop"
+          
+          if ($LASTEXITCODE -ne 0 -or -not $latestTag) {
+            Write-Host "No previous release found. Getting all commits."
+            # If no previous release, get all commits
+            $commits = git log --pretty=format:"- %s (%h)" --no-merges
+          } else {
+            Write-Host "Previous release found: $latestTag. Getting commits since then."
+            # Get commits since the last release
+            $commits = git log "$latestTag..HEAD" --pretty=format:"- %s (%h)" --no-merges
+          }
+          
+          if (-not $commits) {
+            $commits = "- No new commits since last release"
+          }
+          
+          # Escape for GitHub Actions output
+          $commits = $commits -join "`n"
+          echo "COMMIT_MESSAGES<<EOF" >> $env:GITHUB_ENV
+          echo $commits >> $env:GITHUB_ENV
+          echo "EOF" >> $env:GITHUB_ENV
+        shell: powershell
+      
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release v${{ github.run_number }}
+          body: |
+            Automated release from commit ${{ github.sha }}
+            
+            ## Changes in this release:
+            ${{ env.COMMIT_MESSAGES }}
+            
+            ---
+            Built from latest main branch with compiled RW-TradingControl.dll
+          draft: false
+          prerelease: false
+      
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./TradingControl-Release.zip
+          asset_name: TradingControl-Release.zip
+          asset_content_type: application/zip
+      
+      - name: Cleanup temporary files
+        run: |
+          # Remove temporary directories and files
+          if (Test-Path "artifacts") {
+            Remove-Item -Recurse -Force "artifacts"
+            Write-Host "Removed artifacts directory"
+          }
+          if (Test-Path "Assemblies") {
+            Remove-Item -Recurse -Force "Assemblies"
+            Write-Host "Removed Assemblies directory"
+          }
+          if (Test-Path "TradingControl-Release.zip") {
+            Remove-Item -Force "TradingControl-Release.zip"
+            Write-Host "Removed release zip file"
+          }
+          Write-Host "Cleanup completed"
+        shell: powershell
+      
+      - name: Cleanup workspace
+        if: always()
+        run: |
+          # Clean up the workspace contents (but not the workspace directory itself)
+          Get-ChildItem -Force | ForEach-Object {
+            try {
+              Remove-Item -Path $_.FullName -Recurse -Force
+              Write-Host "Removed: $($_.Name)"
+            } catch {
+              Write-Host "Could not remove: $($_.Name) - $($_.Exception.Message)"
+            }
+          }
+          Write-Host "Workspace cleanup completed"
+        shell: powershell
