@@ -30,16 +30,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
       
-      - name: Prepare Assemblies folder
-        run: |
-          New-Item -ItemType Directory -Force -Path Assemblies
-          # List what's actually in the artifacts folder
-          Write-Host "Contents of artifacts folder:"
-          Get-ChildItem ./artifacts
-          # Copy the correct file name
-          Copy-Item ./artifacts/TradingControl.dll default/Assemblies/
-        shell: powershell
-      
       - name: Create Release Zip
         run: |
           # Create a clean temporary directory for the release
