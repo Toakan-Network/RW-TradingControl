@@ -1,5 +1,0 @@
-C:\Assemblies\TradingControl.dll
-Z:\Git\Assemblies\TradingControl.dll
-Z:\Git\rimworld-tradingspot\Assemblies\TradingControl.dll
-Z:\Git\rimworld-tradingspot\Source\obj\Debug\TradingControl.csproj.CoreCompileInputs.cache
-Z:\Git\rimworld-tradingspot\Source\obj\Debug\TradingControl.dll

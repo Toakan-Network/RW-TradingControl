@@ -1,7 +1,0 @@
-Z:\Git\rimworld-tradingspot\Assemblies\TradingSpot.dll
-Z:\Git\rimworld-tradingspot\Assemblies\TradingSpot.pdb
-Z:\Assemblies\TradingSpot.dll
-Z:\Git\Assemblies\TradingSpot.dll
-Z:\Git\rimworld-tradingspot\Source\obj\Debug\TradingSpot.dll
-Z:\Git\rimworld-tradingspot\Source\obj\Debug\TradingSpot.csprojAssemblyReference.cache
-Z:\Git\rimworld-tradingspot\Source\obj\Debug\TradingSpot.csproj.CopyComplete
