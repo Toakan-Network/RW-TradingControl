@@ -10,7 +10,7 @@ on:
 
 jobs:
   release:
-    runs-on: [self-hosted, windows]
+    runs-on: [self-hosted, Windows]
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     permissions:
       contents: write
