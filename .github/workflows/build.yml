@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: 
       group: ToakanLab
-      labels: Windows
+      labels: [self-hosted, Windows]
     permissions:
       contents: read
     steps:
