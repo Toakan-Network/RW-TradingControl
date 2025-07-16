@@ -30,6 +30,31 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
       
+      - name: Update 1.6 Assemblies
+        run: |
+          # List what's in the artifacts folder for debugging
+          Write-Host "Contents of artifacts folder:"
+          Get-ChildItem ./artifacts
+          
+          # Ensure the directories exist
+          New-Item -ItemType Directory -Force -Path "1.6\Assemblies"
+          New-Item -ItemType Directory -Force -Path "default\Assemblies"
+          
+          # Copy the DLL to both locations (try both possible names)
+          if (Test-Path "./artifacts/TradingControl.dll") {
+            Copy-Item "./artifacts/TradingControl.dll" "1.6\Assemblies\" -Force
+            Copy-Item "./artifacts/TradingControl.dll" "default\Assemblies\" -Force
+            Write-Host "Copied TradingControl.dll to 1.6\Assemblies and default\Assemblies"
+          } elseif (Test-Path "./artifacts/RW-TradingControl.dll") {
+            Copy-Item "./artifacts/RW-TradingControl.dll" "1.6\Assemblies\TradingControl.dll" -Force
+            Copy-Item "./artifacts/RW-TradingControl.dll" "default\Assemblies\TradingControl.dll" -Force
+            Write-Host "Copied RW-TradingControl.dll to 1.6\Assemblies and default\Assemblies as TradingControl.dll"
+          } else {
+            Write-Host "ERROR: Could not find DLL file in artifacts"
+            Get-ChildItem ./artifacts -Recurse
+          }
+        shell: powershell
+      
       - name: Create Release Zip
         run: |
           # Create a clean temporary directory for the release
