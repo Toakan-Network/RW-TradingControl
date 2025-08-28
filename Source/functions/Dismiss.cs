@@ -8,7 +8,7 @@ using Verse.AI;
 using Verse.AI.Group;
 using static TradingControl.Harmonize.HarmonyPatches;
 
-namespace TradingControl.functions
+namespace TradingControl.Dismiss
 {
     [StaticConstructorOnStartup]
     class Control
