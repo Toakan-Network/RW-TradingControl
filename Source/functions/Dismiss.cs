@@ -62,14 +62,14 @@ namespace TradingControl.Dismiss
         {
             return pawn.mindState.duty != null && (pawn.mindState.duty.def == DutyDefOf.ExitMapRandom || pawn.mindState.duty.def == DutyDefOf.Steal || pawn.mindState.duty.def == DutyDefOf.Kidnap);
         }
-        public static void Leave(Pawn colonist, LocalTargetInfo target, Pawn playerTarget)
+        public static void Leave(LocalTargetInfo target, Pawn playerTarget)
         {
             if ((target.Pawn.trader.CanTradeNow || target.Pawn.mindState.wantsToTradeWithColony))
             {
                 Lord lord = playerTarget.GetLord();
                 try
                 {
-                    CreateLeaveTransition(lord, colonist);
+                    CreateLeaveTransition(lord);
                 }
                 catch (Exception ex)
                 {
@@ -79,7 +79,7 @@ namespace TradingControl.Dismiss
                 Messages.Message("Caravan from " + lord.faction.Name.ToString() + " was dismissed", MessageTypeDefOf.NeutralEvent, false);
             }
         }
-        public static void CreateLeaveTransition(Lord lord, Pawn colonist)
+        public static void CreateLeaveTransition(Lord lord)
         {
             // Setup the Toil to leave map.
             LordToil LeaveMap = new LordToil_ExitMap(LocomotionUrgency.Jog, true, true);

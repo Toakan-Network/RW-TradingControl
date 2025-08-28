@@ -7,7 +7,8 @@ using UnityEngine;
 using Verse.AI;
 using RimWorld;
 using TradingControl.functions;
-using TradingControl.functions;
+using TradingControl.Settings;
+using TradingControl.Dismiss;
 
 namespace TradingControl.Harmonize
 {
@@ -70,13 +71,13 @@ namespace TradingControl.Harmonize
                 Pawn colonist = pawn;
                 LocalTargetInfo dest = target;
                 Pawn playerTarget = (Pawn)dest.Thing;
-                if (!TradingControl.functions.Control.CanDismiss(colonist, dest)) { return; }
+                if (!Control.CanDismiss(colonist, dest)) { return; }
                 // This bit tells the Colonist to leave.
                 void Action()
                 {
                     try
                     {
-                        functions.Control.Leave(colonist, dest, playerTarget);
+                        Control.Leave(dest, playerTarget);
                     }
                     catch (Exception ex)
                     {
@@ -85,7 +86,7 @@ namespace TradingControl.Harmonize
                 }
 
                 // Creates the value for the Context Menu.
-                string ContextMenuValue = functions.Control.ContextMenu(playerTarget);
+                string ContextMenuValue = Control.ContextMenu(playerTarget);
 
                 // Creates the right click Context Menu.
                 opts.Add(FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(ContextMenuValue, Action, MenuOptionPriority.InitiateSocial, null, dest.Thing), pawn, playerTarget,null, null));
@@ -99,8 +100,7 @@ namespace TradingControl.Harmonize
             //bool punchThrough = LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().punchThroughEnabled;
             bool punchThrough = false;
 
-            DropSpotIndicator dropSpotIndicator = map.listerBuildings.allBuildingsColonist.Find(x => x is DropSpotIndicator) as DropSpotIndicator;
-            if (dropSpotIndicator != null && !map.roofGrid.Roofed(dropSpotIndicator.Position) && OrbitDropSpot.AnyAdjacentGoodDropSpot(dropSpotIndicator.Position, map, false, punchThrough))
+            if (map.listerBuildings.allBuildingsColonist.Find(x => x is DropSpotIndicator) is DropSpotIndicator dropSpotIndicator && !map.roofGrid.Roofed(dropSpotIndicator.Position) && OrbitDropSpot.AnyAdjacentGoodDropSpot(dropSpotIndicator.Position, map, false, punchThrough))
             {
                 IntVec3 dropSpot = dropSpotIndicator.Position;
                 if (!DropCellFinder.TryFindDropSpotNear(dropSpot, map, out IntVec3 singleDropSpot, false, false))

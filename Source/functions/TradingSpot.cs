@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using TradingControl.functions;
 using TradingControl.Settings;
+using Unity.Profiling.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Verse;
@@ -12,7 +13,7 @@ namespace TradingControl.functions
 {
     public class SharedActions
     {
-        private List<Building> spots = new List<Building>();
+        private readonly List<Building> _spots = new List<Building>();
 
         private bool CheckVisitor(LordJob lordJob)
         {
@@ -40,8 +41,6 @@ namespace TradingControl.functions
                 .VisitorsGoToTradeSpot;
             var TraderSetting = LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>()
                 .TradersGoToTradeSpot;
-            var MaxTradeSpotSetting = ((int)LoadedModManager.GetMod<TradingControlMod>()
-                .GetSettings<TradingControlSettings>().MaxTradeSpot);
 
             // For each Lord, check if they are a visitor or trader, then change their chill spot to the building position.
             for (int i = 0; i < lordList.Count; i++)
@@ -98,24 +97,30 @@ namespace TradingControl.functions
 
             var maxTradeSpotSetting = ((int)LoadedModManager.GetMod<TradingControlMod>()
                 .GetSettings<TradingControlSettings>().MaxTradeSpot);
-            spots.Clear();
+            _spots.Clear();
 
             foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist)
             {
                 if (b.def.defName == "TradingSpot" || b.def.defName == "Marketplace")
                 {
-                    spots.Add(b);
+                    _spots.Add(b);
                 }
             }
 
-            while (spots.Count >= maxTradeSpotSetting)
+            Designator marker = new Designator_Deconstruct();
+            while (_spots.Count >= maxTradeSpotSetting)
             {
-                Building oldest = spots[0];
+                Building oldest = _spots[0];
                 Messages.Message("TradingControl.AlreadyOnMap".Translate(), MessageTypeDefOf.NeutralEvent, false);
-                Designator marker = new Designator_Deconstruct();
-                marker.DesignateThing(oldest);
 
-                spots.RemoveAt(0);
+                // Check if Building is already designated for deconstruction
+                Designation marked = Current.Game.CurrentMap.designationManager.DesignationOn(oldest, DesignationDefOf.Deconstruct);
+                if (marked == null)
+                    marker.DesignateThing(oldest);
+
+
+
+                _spots.RemoveAt(0);
             }
         }
     }
