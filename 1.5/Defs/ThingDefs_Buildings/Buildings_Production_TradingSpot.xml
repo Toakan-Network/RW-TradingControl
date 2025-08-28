@@ -21,7 +21,6 @@
 		<building>
 			<sowTag>SupportPlantsOnly</sowTag>
 			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
 		</building>
 		<designationHotKey>Misc12</designationHotKey>
 		<tickerType>Normal</tickerType>
