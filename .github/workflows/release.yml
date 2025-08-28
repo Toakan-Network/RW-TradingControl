@@ -38,17 +38,14 @@ jobs:
           
           # Ensure the directories exist
           New-Item -ItemType Directory -Force -Path "1.6\Assemblies"
-          New-Item -ItemType Directory -Force -Path "default\Assemblies"
           
           # Copy the DLL to both locations (try both possible names)
           if (Test-Path "./artifacts/TradingControl.dll") {
             Copy-Item "./artifacts/TradingControl.dll" "1.6\Assemblies\" -Force
-            Copy-Item "./artifacts/TradingControl.dll" "default\Assemblies\" -Force
-            Write-Host "Copied TradingControl.dll to 1.6\Assemblies and default\Assemblies"
+            Write-Host "Copied TradingControl.dll to 1.6\Assemblies"
           } elseif (Test-Path "./artifacts/RW-TradingControl.dll") {
             Copy-Item "./artifacts/RW-TradingControl.dll" "1.6\Assemblies\TradingControl.dll" -Force
-            Copy-Item "./artifacts/RW-TradingControl.dll" "default\Assemblies\TradingControl.dll" -Force
-            Write-Host "Copied RW-TradingControl.dll to 1.6\Assemblies and default\Assemblies as TradingControl.dll"
+            Write-Host "Copied RW-TradingControl.dll to 1.6\Assemblies as TradingControl.dll"
           } else {
             Write-Host "ERROR: Could not find DLL file in artifacts"
             Get-ChildItem ./artifacts -Recurse
@@ -65,7 +62,7 @@ jobs:
           New-Item -ItemType Directory -Force -Path $releaseDir
           
           # Copy everything except excluded items
-          $excludeItems = @("Source", ".github", ".gitignore", "README.md", "release-temp", "artifacts", "TradingControl-Release.zip")
+          $excludeItems = @("Source", ".github", ".gitignore", "README.md", "release-temp", "artifacts", "TradingControl-Release.zip", "1.0", "1.2", "1.3", "1.4", "1.5", "default")
           
           Get-ChildItem -Force | Where-Object { 
             $_.Name -notin $excludeItems 
