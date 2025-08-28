@@ -54,16 +54,17 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="definitions\defs.cs" />
+    <Compile Include="definition.cs" />
     <Compile Include="functions\Dismiss.cs" />
     <Compile Include="functions\LogHandler.cs" />
     <Compile Include="functions\OrbitDropSpot.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="init.cs" />
-    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="functions\Settings.cs" />
     <Compile Include="functions\TradingSpot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,7 +76,6 @@
       <Version>2.3.6</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
