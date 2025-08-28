@@ -62,7 +62,7 @@ jobs:
           New-Item -ItemType Directory -Force -Path $releaseDir
           
           # Copy everything except excluded items
-          $excludeItems = @("Source", ".github", ".gitignore", "README.md", "release-temp", "artifacts", "TradingControl-Release.zip", "1.0", "1.2", "1.3", "1.4", "1.5", "default")
+          $excludeItems = @("Source", ".git", ".github", ".gitignore", "README.md", "release-temp", "artifacts", "TradingControl-Release.zip", "1.0", "1.2", "1.3", "1.4", "1.5", "default")
           
           Get-ChildItem -Force | Where-Object { 
             $_.Name -notin $excludeItems 
