@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase" Name="TradingSpot">
 		<defName>TradingSpot</defName>
 		<label>Caravan Trade Spot</label>
-		<thingClass>TradingControl.TradingSpot.TradingSpot</thingClass>
+		<thingClass>TradingControl.functions.TradingSpot</thingClass>
 		<description>Designates a spot where traders will stop when visiting your colony.</description>
 		<graphicData>
 			<texPath>Things/Building/Misc/PartySpot</texPath>
@@ -25,4 +25,40 @@
 		<designationHotKey>Misc12</designationHotKey>
 		<tickerType>Normal</tickerType>
 	</ThingDef>
+
+	<!-- Add Marketplace -->
+	<ThingDef ParentName="TradingSpot" Name="Marketplace">
+		<defName>Marketplace</defName>
+		<label>Marketplace</label>
+		<thingClass>TradingControl.functions.MarketPlace</thingClass>
+		<description>Designates a spot where traders will stop when visiting your colony.</description>
+		<graphicData>
+			<texPath>TradingControl/Marketplace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,2)</drawSize>
+		</graphicData> 
+		<size>(3,2)</size>
+		<statBases Inherit="False">
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>20</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+			<Flammability>2.0</Flammability>
+		</statBases>
+		<costStuffCount>40</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>true</useHitPoints>
+		<designationCategory>Misc</designationCategory>
+		<passability>Standable</passability>
+		<designationHotKey>Misc12</designationHotKey>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
 </Defs>
