@@ -7,7 +7,7 @@ using UnityEngine;
 using Verse.AI;
 using RimWorld;
 using TradingControl.functions;
-using TradingControl.Dismiss;
+using TradingControl.functions;
 
 namespace TradingControl.Harmonize
 {
@@ -23,7 +23,7 @@ namespace TradingControl.Harmonize
             try
             {
                 // 1.6 Lets us patch the ChoiceLetter classes to allow dismissing with right click.
-                LogHandler.LogInfo("#1 - Setting up Dismiss options.");
+                //LogHandler.LogInfo("#1 - Setting up Dismiss options.");
                 // Need to override the CanDismisswithRightClick in ChoiceLetter classes.
 
                 //instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(Dismisstraders)));
@@ -70,13 +70,13 @@ namespace TradingControl.Harmonize
                 Pawn colonist = pawn;
                 LocalTargetInfo dest = target;
                 Pawn playerTarget = (Pawn)dest.Thing;
-                if (!TradingControl.Dismiss.Control.CanDismiss(colonist, dest)) { return; }
+                if (!TradingControl.functions.Control.CanDismiss(colonist, dest)) { return; }
                 // This bit tells the Colonist to leave.
                 void Action()
                 {
                     try
                     {
-                        Dismiss.Control.Leave(colonist, dest, playerTarget);
+                        functions.Control.Leave(colonist, dest, playerTarget);
                     }
                     catch (Exception ex)
                     {
@@ -85,7 +85,7 @@ namespace TradingControl.Harmonize
                 }
 
                 // Creates the value for the Context Menu.
-                string ContextMenuValue = Dismiss.Control.ContextMenu(playerTarget);
+                string ContextMenuValue = functions.Control.ContextMenu(playerTarget);
 
                 // Creates the right click Context Menu.
                 opts.Add(FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(ContextMenuValue, Action, MenuOptionPriority.InitiateSocial, null, dest.Thing), pawn, playerTarget,null, null));
