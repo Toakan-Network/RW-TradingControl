@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- Based on OrbitalTradeBeacon-->
 	<ThingDef ParentName="BuildingBase">
 		<defName>DropSpotTradeShip</defName>
 		<label>Orbital Drop Spot</label>
-		<thingClass>TradingControl.functions.DropSpotIndicator</thingClass>
+		<thingClass>TradingControl.definitions.DropSpotIndicator</thingClass>
 		<description>Designates a spot for trade ships to drop their items.</description>
 		<graphicData>
 			<texPath>DropSpotMiscIcon</texPath>
@@ -11,11 +12,21 @@
 		</graphicData>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<statBases>
-			<WorkToBuild>0</WorkToBuild>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Flammability>0.5</Flammability>
+			<Mass>5</Mass>
+			<Comfort>0</Comfort>
 		</statBases>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<stuffCategories>
+      		<li>Metallic</li>
+		</stuffCategories>
 		<rotatable>false</rotatable>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>False</useHitPoints>
+		<useHitPoints>true</useHitPoints>
 		<designationCategory>Misc</designationCategory>
 		<passability>Standable</passability>
 		<placeWorkers>
@@ -26,6 +37,8 @@
 			<sowTag>SupportPlantsOnly</sowTag>
 			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
 			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
 		<designationHotKey>Misc11</designationHotKey>
 	</ThingDef>
