@@ -22,13 +22,7 @@ namespace TradingControl.Harmonize
             LogHandler.LogInfo("#0 - Starting Harmony Patch...");
             try
             {
-                // 1.6 Lets us patch the ChoiceLetter classes to allow dismissing with right click.
-                // LogHandler.LogInfo("#1 - Setting up Dismiss options.");
-
-                // LogHandler.LogInfo("#2 - Patching Toils (Job Manager)");
-                // instance.Patch(AccessTools.Method(typeof(JobDriver), "SetupToils"));
-
-                LogHandler.LogInfo("#3 - Patching Orbital Drop Sites");
+                LogHandler.LogInfo("Patching Orbital Drop Sites");
                 instance.Patch(AccessTools.Method(typeof(DropCellFinder), nameof(DropCellFinder.TradeDropSpot)), prefix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CustomTradeDropSpot)));
 
                 //LogHandler.LogInfo("#4 - Patching Oribtal Requests");
