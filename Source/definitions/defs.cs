@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace TradingControl.definitions
 {
+    [DefOf]
     public class Trading : BuildableDef
     {
         public string Name
@@ -34,4 +36,10 @@ namespace TradingControl.definitions
             
     }
 
+    [DefOf]
+    public static class DismissPawn
+    {
+        public static JobDef DismissAny;
+
+    }
 }

@@ -15,23 +15,64 @@ namespace TradingControl.functions
     {
         private readonly List<Building> _spots = new List<Building>();
 
-        private bool CheckVisitor(LordJob lordJob)
+        public bool CanHandleTraderOrVisitor(Pawn targetPawn)
+        {
+            // Target Checks
+            if (targetPawn == null)
+                return false;
+
+            if (targetPawn.lord?.LordJob == null)
+                return false;
+
+            // Null check for mindState
+            if (targetPawn.mindState == null)
+                return false;
+
+            // Either Visitor or Trader
+            if (CheckVisitor(targetPawn.lord.LordJob))
+                return true;
+                    
+            if (CheckTrader(targetPawn.lord.LordJob))
+                return true;
+            
+            return false;
+        }
+
+        public bool CanHandleColonist(Pawn colonist)
+        {
+            if (colonist == null)
+                return false;
+
+            if (!colonist.IsColonistPlayerControlled)
+                return false;
+
+            if (!colonist.RaceProps.Humanlike)
+                return false;
+
+            if (colonist.DeadOrDowned)
+                return false;
+
+            if (colonist.skills.GetSkill(SkillDefOf.Social).TotallyDisabled)
+                return false;
+
+            return true;
+        }
+
+        private bool CheckVisitor(Verse.AI.Group.LordJob lordJob)
         {
             if (lordJob is LordJob_VisitColony)
             {
                 return true;
             }
-
             return false;
         }
 
-        private bool CheckTrader(LordJob lordJob)
+        private bool CheckTrader(Verse.AI.Group.LordJob lordJob)
         {
             if (lordJob is LordJob_TradeWithColony)
             {
                 return true;
             }
-
             return false;
         }
 

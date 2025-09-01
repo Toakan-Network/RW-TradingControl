@@ -24,10 +24,9 @@ namespace TradingControl.Harmonize
             try
             {
                 // 1.6 Lets us patch the ChoiceLetter classes to allow dismissing with right click.
-                //LogHandler.LogInfo("#1 - Setting up Dismiss options.");
-                // Need to override the CanDismisswithRightClick in ChoiceLetter classes.
-
-                //instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(Dismisstraders)));
+                LogHandler.LogInfo("#1 - Setting up Dismiss options.");
+                // Humanlike is no more :(
+                // instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), null, new HarmonyMethod(typeof(Setup), nameof(Setup.DismissTraders)));
 
                 LogHandler.LogInfo("#2 - Patching Toils (Job Manager)");
                 instance.Patch(AccessTools.Method(typeof(JobDriver), "SetupToils"));
@@ -38,6 +37,7 @@ namespace TradingControl.Harmonize
                 //LogHandler.LogInfo("#4 - Patching Oribtal Requests");
                 //instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanLikeOrders"), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(OrbitalRequest)));
                 
+                instance.PatchAll();
                 LogHandler.LogInfo("## - Harmony Patches Applied");
             }
             catch (Exception ex)
@@ -46,54 +46,7 @@ namespace TradingControl.Harmonize
             }
             LogHandler.LogInfo("## - No further Patches detected..");
         }
-        // -------------- End of HarmonyPatches() ----------------- //
-        // -------------- Starting to run around ----------------- //
-        static void Postfix(JobDriver __instance)
-        {
-            if (!(__instance is JobDriver_Goto))
-            {
-                return;
-            }
-            JobDriver_Goto jobDriver = (JobDriver_Goto)__instance;
-            List<Toil> toils = Traverse.Create(jobDriver).Field("toils").GetValue<List<Toil>>();
-            if (toils.Count() > 0)
-            {
-                Toil toil = toils.ElementAt(0);
-                toil.AddPreTickAction(delegate { });
-            }
-        }
-        // -------------- Not running around anymore ----------------- //
-        // -------------- Set up the Dismiss Traders options ----------------- //
-        static void Dismisstraders(ref Vector3 clickPos, ref Pawn pawn, ref List<FloatMenuOption> opts)
-        {
-            foreach (LocalTargetInfo target in GenUI.TargetsAt(clickPos, TargetingParameters.ForAttackAny()))
-            {
-                Pawn colonist = pawn;
-                LocalTargetInfo dest = target;
-                Pawn playerTarget = (Pawn)dest.Thing;
-                if (!Control.CanDismiss(colonist, dest)) { return; }
-                // This bit tells the Colonist to leave.
-                void Action()
-                {
-                    try
-                    {
-                        Control.Leave(dest, playerTarget);
-                    }
-                    catch (Exception ex)
-                    {
-                        LogHandler.LogError("Exception Caught: ", ex);
-                    }
-                }
 
-                // Creates the value for the Context Menu.
-                string ContextMenuValue = Control.ContextMenu(playerTarget);
-
-                // Creates the right click Context Menu.
-                opts.Add(FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(ContextMenuValue, Action, MenuOptionPriority.InitiateSocial, null, dest.Thing), pawn, playerTarget,null, null));
-            }
-        }
-
-        // -------------- Finish the Dismiss Traders options ----------------- //
         // ------------------ Setup Orbital Drop site -------------------//
         public static bool CustomTradeDropSpot(Map map, ref IntVec3 __result)
         {
@@ -113,12 +66,6 @@ namespace TradingControl.Harmonize
             }
             return true;
         }
-        // ------------------ Finish Orbital Drop site -------------------//
-
-        // ------------------ Setup Orbital requests-------------------//
-
-
-        // ------------------ Finish Orbital requests -------------------//
     }
 }
 
