@@ -4,7 +4,11 @@
   <TradingSpot.label>トレード地点</TradingSpot.label>
   <TradingSpot.description>キャラバントレーダーが,あなたのコロニーを訪れた時に,彼らが立ち寄る場所を指定します.</TradingSpot.description>
 
+  <Marketplace.label>市場</Marketplace.label>
+  <Marketplace.description>トレーダーがあなたのコロニーを訪問する際に,彼らが立ち寄る場所を指定します.</Marketplace.description>
+
   <DropSpotTradeShip.label>軌道投下地点</DropSpotTradeShip.label>
   <DropSpotTradeShip.description>トレード船が,あなたのコロニーに,商品を投下する場所を指定します.</DropSpotTradeShip.description>
+
 
 </LanguageData>
