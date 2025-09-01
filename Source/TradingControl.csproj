@@ -57,7 +57,6 @@
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Debug\LordTickDebug.cs" />
     <Compile Include="definitions\Buildings.cs" />
     <Compile Include="definitions\JobDriver.cs" />
     <Compile Include="definitions\WorkGiver.cs" />
