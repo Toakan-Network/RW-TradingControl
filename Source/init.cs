@@ -1,7 +1,7 @@
 ﻿using Verse;
 using TradingControl.functions;
 
-namespace TradingControl.init
+namespace TradingControl
 {
     public static class Initialize
     {

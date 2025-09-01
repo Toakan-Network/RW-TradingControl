@@ -1,13 +1,14 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using HarmonyLib;
-using Verse;
-using UnityEngine;
-using Verse.AI;
+﻿using HarmonyLib;
 using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using TradingControl.definitions;
 using TradingControl.functions;
 using TradingControl.Settings;
+using UnityEngine;
+using Verse;
+using Verse.AI;
 
 namespace TradingControl.Harmonize
 {
@@ -19,17 +20,18 @@ namespace TradingControl.Harmonize
         static HarmonyPatches()
         {
             var instance = new Harmony("TradingControl.Tad.RW.Core");
-            LogHandler.LogInfo("#0 - Starting Harmony Patch...");
+            LogHandler.LogInfo("00 - Starting Harmony Patch...");
             try
             {
-                LogHandler.LogInfo("Patching Orbital Drop Sites");
-                instance.Patch(AccessTools.Method(typeof(DropCellFinder), nameof(DropCellFinder.TradeDropSpot)), prefix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CustomTradeDropSpot)));
+                LogHandler.LogInfo("01 - Patching Orbital Drop Sites");
+                instance.Patch(AccessTools.Method(typeof(DropCellFinder), nameof(DropCellFinder.TradeDropSpot)), postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CustomTradeDropSpot)));
 
                 //LogHandler.LogInfo("#4 - Patching Oribtal Requests");
                 //instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanLikeOrders"), null, new HarmonyMethod(typeof(HarmonyPatches), nameof(OrbitalRequest)));
                 
+                LogHandler.LogInfo("99 - Catching any last patches.");
                 instance.PatchAll();
-                LogHandler.LogInfo("## - Harmony Patches Applied");
+
             }
             catch (Exception ex)
             {
@@ -39,23 +41,34 @@ namespace TradingControl.Harmonize
         }
 
         // ------------------ Setup Orbital Drop site -------------------//
-        public static bool CustomTradeDropSpot(Map map, ref IntVec3 __result)
+        public static void CustomTradeDropSpot(Map map, ref IntVec3 __result)
         {
-            //bool punchThrough = LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().punchThroughEnabled;
-            bool punchThrough = false;
+            if (map == null)
+                return;
 
-            if (map.listerBuildings.allBuildingsColonist.Find(x => x is DropSpotIndicator) is DropSpotIndicator dropSpotIndicator && !map.roofGrid.Roofed(dropSpotIndicator.Position) && OrbitDropSpot.AnyAdjacentGoodDropSpot(dropSpotIndicator.Position, map, false, punchThrough))
+            bool punchThrough = LoadedModManager.GetMod<TradingControlMod>()
+                .GetSettings<TradingControlSettings>().punchThroughEnabled;
+
+            // Get the Orbital Drop Spot Indicator(s)
+            var dropSpotIndicators = map.listerBuildings.allBuildingsColonist
+                .FindAll(x => x is DropSpotIndicator);
+            if (dropSpotIndicators.Count == 0)
+                return; // keep original result
+
+            var indicator = dropSpotIndicators[0];
+
+            if (OrbitDropSpot.AnyAdjacentGoodDropSpot(indicator.Position, map, false, punchThrough))
             {
-                IntVec3 dropSpot = dropSpotIndicator.Position;
-                if (!DropCellFinder.TryFindDropSpotNear(dropSpot, map, out IntVec3 singleDropSpot, false, false))
-                {
-                    LogHandler.LogInfo("No usable ground near Orbital Drop Site" + dropSpot + ". Using a clear, nearby area.");
-                    singleDropSpot = CellFinderLoose.RandomCellWith((IntVec3 c) => c.Standable(map) && !c.Fogged(map), map, 1000);
-                }
-                __result = singleDropSpot;
-                return false;
+                __result = indicator.Position;
+                return;
             }
-            return true;
+
+            LogHandler.LogInfo("No usable ground near Orbital Drop Site " + indicator + ". Using a clear, nearby area.");
+
+            __result = CellFinderLoose.RandomCellWith(
+                c => c.Standable(map) && !c.Fogged(map),
+                map,
+                1000);
         }
     }
 }

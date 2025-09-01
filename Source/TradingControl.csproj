@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Debug\LordTickDebug.cs" />
+    <Compile Include="definitions\Buildings.cs" />
     <Compile Include="definitions\JobDriver.cs" />
     <Compile Include="definitions\WorkGiver.cs" />
     <Compile Include="functions\FloatMenuOptionProvider.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="init.cs" />
     <Compile Include="Settings\Settings.cs" />
-    <Compile Include="functions\TradingSpot.cs" />
+    <Compile Include="functions\SharedActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="definitions\defs.cs" />
   </ItemGroup>

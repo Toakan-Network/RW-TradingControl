@@ -12,7 +12,7 @@ namespace TradingControl.Settings
     [StaticConstructorOnStartup]
     public class TradingControlSettings : ModSettings
     {
-        public bool TradingSpotEnabled = TradingControl.init.Initialize.TradingSpotEnabled();
+        public bool TradingSpotEnabled = TradingControl.Initialize.TradingSpotEnabled();
         public bool VisitorsGoToTradeSpot = true;
         public bool TradersGoToTradeSpot = true;
         public bool FlagMarker;
