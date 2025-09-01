@@ -19,7 +19,7 @@ namespace TradingControl.Settings
         public float MaxTradeSpot = 1;
 
         public bool MarketMarker;
-        //public bool punchThroughEnabled = false;
+        public bool punchThroughEnabled = false;
 
         public override void ExposeData()
         {
@@ -28,7 +28,7 @@ namespace TradingControl.Settings
             Scribe_Values.Look(ref TradersGoToTradeSpot, "TradingControl.TradersGoToTradeSpot", TradersGoToTradeSpot, true);
             Scribe_Values.Look(ref VisitorsGoToTradeSpot, "TradingControl.VisitorsGotoTradeSpot", VisitorsGoToTradeSpot, true);
             Scribe_Values.Look(ref MaxTradeSpot, "TradingControl.MaxTradeSpot", MaxTradeSpot, true);
-            //Scribe_Values.Look(ref punchThroughEnabled, "TradingControl.punchThroughEnabled", punchThroughEnabled, true);
+            Scribe_Values.Look(ref punchThroughEnabled, "TradingControl.punchThroughEnabled", punchThroughEnabled, true);
             //Scribe_Values.Look(ref FlagMarker, "TradingControl.UseFlagMarker", false, true);
             //Scribe_Values.Look(ref MarketMarker, "TradingControl.MarketMarker", MarketMarker, true);
             base.ExposeData();
@@ -63,7 +63,7 @@ namespace TradingControl.Settings
             
             l.CheckboxLabeled("TradingControl.VisitorsGoToTradeSpot".Translate(), ref LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().VisitorsGoToTradeSpot);
             
-            //l.CheckboxLabeled("TradingControl.punchThroughEnabled".Translate(), ref LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().punchThroughEnabled);
+            l.CheckboxLabeled("TradingControl.punchThroughEnabled".Translate(), ref LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().punchThroughEnabled);
 
             l.Label("TradingControl.MaxTradeSpot".Translate() +((int) LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().MaxTradeSpot) + ".");
             LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().MaxTradeSpot = l.Slider(LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().MaxTradeSpot, 1f, 10f);
