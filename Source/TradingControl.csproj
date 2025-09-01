@@ -60,9 +60,7 @@
     <Compile Include="Debug\LordTickDebug.cs" />
     <Compile Include="definitions\JobDriver.cs" />
     <Compile Include="definitions\WorkGiver.cs" />
-    <Compile Include="functions\Dismiss.cs" />
     <Compile Include="functions\FloatMenuOptionProvider.cs" />
-    <Compile Include="functions\LordJobs.cs" />
     <Compile Include="Tools\LogHandler.cs" />
     <Compile Include="functions\OrbitDropSpot.cs" />
     <Compile Include="HarmonyPatches.cs" />

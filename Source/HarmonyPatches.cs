@@ -8,7 +8,6 @@ using Verse.AI;
 using RimWorld;
 using TradingControl.functions;
 using TradingControl.Settings;
-using TradingControl.Dismiss;
 
 namespace TradingControl.Harmonize
 {
@@ -24,12 +23,10 @@ namespace TradingControl.Harmonize
             try
             {
                 // 1.6 Lets us patch the ChoiceLetter classes to allow dismissing with right click.
-                LogHandler.LogInfo("#1 - Setting up Dismiss options.");
-                // Humanlike is no more :(
-                // instance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), null, new HarmonyMethod(typeof(Setup), nameof(Setup.DismissTraders)));
+                // LogHandler.LogInfo("#1 - Setting up Dismiss options.");
 
-                LogHandler.LogInfo("#2 - Patching Toils (Job Manager)");
-                instance.Patch(AccessTools.Method(typeof(JobDriver), "SetupToils"));
+                // LogHandler.LogInfo("#2 - Patching Toils (Job Manager)");
+                // instance.Patch(AccessTools.Method(typeof(JobDriver), "SetupToils"));
 
                 LogHandler.LogInfo("#3 - Patching Orbital Drop Sites");
                 instance.Patch(AccessTools.Method(typeof(DropCellFinder), nameof(DropCellFinder.TradeDropSpot)), prefix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CustomTradeDropSpot)));
