@@ -18,4 +18,7 @@
 	<TradingControl.Settings.OrbitalBehaviour>Configure unique options for the Orbital Drop Spot</TradingControl.Settings.OrbitalBehaviour>
 	<TradingControl.Settings.RequireWorkToPlace>Require work to place ALL Trading Spots?</TradingControl.Settings.RequireWorkToPlace>
 	<TradingControl.Settings.RequireWorkToRemove>Require work to remove ALL Trading Spots?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Trading Social Buffs</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Use Social Trade Mood Buff?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Use Social Trade Aura Buff?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

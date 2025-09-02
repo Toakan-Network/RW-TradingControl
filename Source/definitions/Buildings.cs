@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TradingControl.functions;
+using TradingControl.Settings;
 using Verse;
 using Verse.AI.Group;
 
@@ -20,15 +21,23 @@ namespace TradingControl.definitions
         protected override void Tick()
         {
             base.Tick();
+
             if (_count++ > 1)
             {
                 _count = 0;
                 List<Lord> lords = Map.lordManager.lords;
                 Actions.GoToTradeSpot(Position, lords);
+                
             }
+            if (!this.IsHashIntervalTick(30))
+            {
+                return;
+            }
+            // Only Apply if Setting enabled
+            if (LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().UseSocialAuraTradeBuff)
+                Aura.AuraTick(this, Aura.AuraType.TradeBuff);
         }
     }
-
 
     public class TradingSpot : Building
     {

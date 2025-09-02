@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef>
+        <defName>TC_TraderBuff</defName>
+        <label>trader buff</label>
+        <description>A nearby object is enhancing the user's Trading skills.</description>
+        <thingClass>TradingControl.definitions.TraderBuff</thingClass>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>TC_TradeBuff</defName>
+        <label>trader buff</label>
+        <labelNoun>a trader buff</labelNoun>
+        <description>A nearby object is enhancing the user's Trading skills.</description>
+        <hediffClass>TradingControl.definitions.TC_TradeBuff_Hediff</hediffClass>
+        <initialSeverity>0.0001</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <alwaysShowSeverity>true</alwaysShowSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <label>Bargain</label>
+                <statOffsets>
+                    <TradePriceImprovement>0.001</TradePriceImprovement>
+                </statOffsets>
+            </li>
+            <li>
+                <label>Savvy</label>
+                <minSeverity>0.1</minSeverity>
+                <statOffsets>
+                    <TradePriceImprovement>0.01</TradePriceImprovement>
+                </statOffsets>
+            </li>
+            <li>
+                <label>Shrewd</label>
+                <minSeverity>0.3</minSeverity>
+                <statOffsets>
+                    <TradePriceImprovement>0.03</TradePriceImprovement>
+                </statOffsets>
+            </li>
+            <li>
+                <label>Profit</label>
+                <minSeverity>0.5</minSeverity>
+                <statOffsets>
+                    <TradePriceImprovement>0.05</TradePriceImprovement>
+                </statOffsets>
+            </li>
+            <li>
+                <label>Clever</label>
+                <minSeverity>0.8</minSeverity>
+                <statOffsets>
+                    <TradePriceImprovement>0.08</TradePriceImprovement>
+                </statOffsets>
+            </li>
+            <li>
+                <label>Expert</label>
+                <minSeverity>1.0</minSeverity>
+                <statOffsets>
+                    <TradePriceImprovement>0.1</TradePriceImprovement>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+  </Defs>

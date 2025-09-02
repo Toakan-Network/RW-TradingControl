@@ -21,6 +21,8 @@ namespace TradingControl.Settings
         public bool RequiresWorkToPlace = true;
         public bool RequiresWorkToRemove = true;
         public int DefaultWorkValue = 500;
+        public bool UseSocialMoodTradeBuff = false;
+        public bool UseSocialAuraTradeBuff = true;
 
         public override void ExposeData()
         {
@@ -30,15 +32,20 @@ namespace TradingControl.Settings
             Scribe_Values.Look(ref VisitorsGoToTradeSpot, "TradingControl.VisitorsGotoTradeSpot", VisitorsGoToTradeSpot, true);
             Scribe_Values.Look(ref MaxTradeSpot, "TradingControl.MaxTradeSpot", MaxTradeSpot, true);
             Scribe_Values.Look(ref PunchThroughEnabled, "TradingControl.punchThroughEnabled", PunchThroughEnabled, true);
-            Scribe_Values.Look(ref RequiresWorkToPlace, "TradingControl.RequiresWorkToPlace", RequiresWorkToPlace, false);
-            Scribe_Values.Look(ref RequiresWorkToRemove, "TradingControl.RequiresWorkToRemove", RequiresWorkToRemove, false);
-            
+            Scribe_Values.Look(ref RequiresWorkToPlace, "TradingControl.RequiresWorkToPlace", RequiresWorkToPlace, true);
+            Scribe_Values.Look(ref RequiresWorkToRemove, "TradingControl.RequiresWorkToRemove", RequiresWorkToRemove, true);
+            Scribe_Values.Look(ref UseSocialMoodTradeBuff, "TradingControl.UseSocialTradeMoodBuff", UseSocialMoodTradeBuff, true);
+            Scribe_Values.Look(ref UseSocialAuraTradeBuff, "TradingControl.UseSocialTradeAuraBuff", UseSocialAuraTradeBuff, true);
+
+
             this.ApplySettings();
             base.ExposeData();
         }
 
         private void ApplySettings()
         {
+            // Only do this when saving settings to overwrite the Cost of Things
+
             if (TC_DefOf.DropSpotTradeShip == null && TC_DefOf.Marketplace == null)
                 return;
 
@@ -92,14 +99,16 @@ namespace TradingControl.Settings
             l.CheckboxLabeled("TradingControl.Settings.RequireWorkToPlace".Translate(), ref tradingControlModManager.RequiresWorkToPlace);
             l.CheckboxLabeled("TradingControl.Settings.RequireWorkToRemove".Translate(), ref tradingControlModManager.RequiresWorkToRemove);
             l.Label("TradingControl.MaxTradeSpot".Translate() + ((int)tradingControlModManager.MaxTradeSpot) + ".");
+            tradingControlModManager.MaxTradeSpot = l.Slider(tradingControlModManager.MaxTradeSpot, 1f, 10f);
+
             l.Gap();
             l.Label("TradingControl.Settings.OrbitalBehaviour".Translate());
             l.CheckboxLabeled("TradingControl.punchThroughEnabled".Translate(), ref tradingControlModManager.PunchThroughEnabled);
             l.Gap();
-            
-            tradingControlModManager.MaxTradeSpot = l.Slider(tradingControlModManager.MaxTradeSpot, 1f, 10f);
+            l.Label("TradingControl.Settings.SocialBuffs".Translate());
+            l.CheckboxLabeled("TradingControl.Settings.UseSocialTradeMoodBuff".Translate(), ref tradingControlModManager.UseSocialMoodTradeBuff);
+            l.CheckboxLabeled("TradingControl.Settings.UseSocialTradeAuraBuff".Translate(), ref tradingControlModManager.UseSocialAuraTradeBuff);
 
-            
             // l.CheckboxLabeled( "TradingControl.UseFlagMarker".Translate(), ref LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().FlagMarker );
             // l.CheckboxLabeled( "Use the new Marketplace? (Beta)", ref LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().MarketMarker);
             l.End();
