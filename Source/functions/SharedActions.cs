@@ -131,10 +131,9 @@ namespace TradingControl.functions
                 }
             }
         }
-
+        
         public void CheckForPreviousSpot(Building building)
         {
-            
             if (Current.Game?.CurrentMap == null)
                 return;
 
@@ -143,11 +142,13 @@ namespace TradingControl.functions
 
             var maxTradeSpotSetting = ((int)LoadedModManager.GetMod<TradingControlMod>()
                 .GetSettings<TradingControlSettings>().MaxTradeSpot);
+            var RequiresWorkToRemove = (bool)LoadedModManager.GetMod<TradingControlMod>()
+                .GetSettings<TradingControlSettings>().RequiresWorkToRemove;
+            
             _spots.Clear();
 
-
-            if (building.GetType() == typeof(TradingSpot) || building.GetType() == typeof(MarketPlace))
-                foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist.FindAll(x => x.GetType() == typeof(TradingSpot) || x.GetType() == typeof(MarketPlace)))
+            if (building.GetType() == typeof(TradingSpot) || building.GetType() == typeof(Marketplace))
+                foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist.FindAll(x => x.GetType() == typeof(TradingSpot) || x.GetType() == typeof(Marketplace)))
                     _spots.Add(b);
 
             if (building.GetType() == typeof(DropSpotIndicator))
@@ -163,8 +164,11 @@ namespace TradingControl.functions
 
                 // Check if Building is already designated for deconstruction
                 Designation marked = Current.Game.CurrentMap.designationManager.DesignationOn(oldest, DesignationDefOf.Deconstruct);
-                if (marked == null)
+                if (marked == null && RequiresWorkToRemove)
                     marker.DesignateThing(oldest);
+
+                if (!RequiresWorkToRemove)
+                    oldest.Destroy();
 
                 _spots.RemoveAt(0);
             }

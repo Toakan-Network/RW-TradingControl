@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BuildingBase" Name="TradingSpot">
+	<ThingDef ParentName="BuildingBase" Name="TC_TradingSpot">
 		<defName>TradingSpot</defName>
 		<label>Caravan Trade Spot</label>
 		<thingClass>TradingControl.definitions.TradingSpot</thingClass>
@@ -27,10 +27,10 @@
 	</ThingDef>
 
 	<!-- Add Marketplace -->
-	<ThingDef ParentName="TradingSpot" Name="Marketplace">
+	<ThingDef ParentName="TC_TradingSpot" Name="TC_Marketplace">
 		<defName>Marketplace</defName>
 		<label>Marketplace</label>
-		<thingClass>TradingControl.definitions.MarketPlace</thingClass>
+		<thingClass>TradingControl.definitions.Marketplace</thingClass>
 		<description>Designates a spot where traders will stop when visiting your colony.</description>
 		<graphicData>
 			<texPath>TradingControl/Marketplace</texPath>

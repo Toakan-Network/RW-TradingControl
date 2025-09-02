@@ -10,4 +10,12 @@ namespace TradingControl.definitions
         public static JobDef DismissAny;
 
     }
+
+    [DefOf]
+    public static class TC_DefOf
+    {
+        public static ThingDef Marketplace;
+        public static ThingDef TradingSpot;
+        public static ThingDef DropSpotTradeShip;
+    }
 }

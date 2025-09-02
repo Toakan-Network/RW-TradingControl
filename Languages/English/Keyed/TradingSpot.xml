@@ -8,5 +8,14 @@
 	<TradingControl.TradingSpotEnabled>Enable Trading Spot?</TradingControl.TradingSpotEnabled>
 	<TradingControl.MaxTradeSpot>Maximum Trading spots on the map:  </TradingControl.MaxTradeSpot>
 	<TradingControl.punchThroughEnabled>Can orbital drops go through roofs?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>Use Custom marker for trading spot?</TradingControl.UseFlagMarker>
 	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Trading Spot</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Designates a spot where traders will stop when visiting your colony.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Trading Spot Settings</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Configure the settings for the Trading Spot.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Configure the behavior of the Trading Spots.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Configure unique options for the Orbital Drop Spot</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>Require work to place ALL Trading Spots?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>Require work to remove ALL Trading Spots?</TradingControl.Settings.RequireWorkToRemove>
 </LanguageData>

@@ -7,12 +7,12 @@ using Verse.AI.Group;
 namespace TradingControl.definitions
 {
 
-    public class MarketPlace : Building
+    public class Marketplace : Building
     {
         public SharedActions Actions = new SharedActions();
         private int _count = 0;
 
-        public MarketPlace()
+        public Marketplace()
         {
             Actions.CheckForPreviousSpot(this);
         }
@@ -56,7 +56,6 @@ namespace TradingControl.definitions
     public class DropSpotIndicator : Building
     {
         public SharedActions Actions = new SharedActions();
-        private int _count = 0;
 
         public DropSpotIndicator()
         {

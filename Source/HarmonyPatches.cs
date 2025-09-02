@@ -1,14 +1,10 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using TradingControl.definitions;
 using TradingControl.functions;
 using TradingControl.Settings;
-using UnityEngine;
 using Verse;
-using Verse.AI;
 
 namespace TradingControl.Harmonize
 {
@@ -47,7 +43,7 @@ namespace TradingControl.Harmonize
                 return;
 
             bool punchThrough = LoadedModManager.GetMod<TradingControlMod>()
-                .GetSettings<TradingControlSettings>().punchThroughEnabled;
+                .GetSettings<TradingControlSettings>().PunchThroughEnabled;
 
             // Get the Orbital Drop Spot Indicator(s)
             var dropSpotIndicators = map.listerBuildings.allBuildingsColonist

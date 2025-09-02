@@ -36,8 +36,5 @@ namespace TradingControl
             // No mods found, keep Trading Spot enabled.
             return true;
         }
-
     }
-
-
 }

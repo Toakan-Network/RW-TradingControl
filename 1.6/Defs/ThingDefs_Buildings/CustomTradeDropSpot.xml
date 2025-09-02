@@ -13,7 +13,7 @@
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
-			<WorkToBuild>400</WorkToBuild>
+			<WorkToBuild>500</WorkToBuild>
 			<Flammability>0.5</Flammability>
 			<Mass>5</Mass>
 			<Comfort>0</Comfort>
