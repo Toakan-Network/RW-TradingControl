@@ -29,10 +29,9 @@ namespace TradingControl
         public static bool TradingSpotEnabled()
         {
             // Disable Trading spot if mod is found.
-            if (HospitalityCheck()) 
-            {
-                return false;
-            }
+            //if (HospitalityCheck()) 
+            //    return false;
+            
             // No mods found, keep Trading Spot enabled.
             return true;
         }
