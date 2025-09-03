@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Based on OrbitalTradeBeacon -->
+
+  <DropSpotTradeShip.label>軌道投下地点</DropSpotTradeShip.label>
+  <DropSpotTradeShip.description>トレード船が,あなたのコロニーに,商品を投下する場所を指定します.</DropSpotTradeShip.description>
+  <Blueprint_DropSpotTradeShip.label>軌道投下地点 (設計)</Blueprint_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.label>軌道投下地点 (施工)</Frame_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.description>トレード船が,あなたのコロニーに,商品を投下する場所を指定します.</Frame_DropSpotTradeShip.description>
+
+
+</LanguageData>
