@@ -12,27 +12,41 @@
         <li>1.6</li>
     </supportedVersions>
     <description xml:whitespace="preserve">
-    Control where you want the traders to stay, then tell them when you want them to leave!
+Trading Control has expanded since it's first inception, being a simple place to direct traders, and stop them trampling over your colony!
 
-    -------- Update 2024/04/10 --------------
-    - Update for 1.6
-    - Added Settings to allow you to decide who you want to be able to dismiss.
-    -----------------------------------------
+Trading Control now allows you to manage your local Visitors and Traders more effectively.
+- Designate a Trading area around a simple trade marker.
+- Create a Marketplace stall and gain trading buffs for supporting these independant traders.
+- Designate Orbital Supply drop locations, so they at least go near your Colony!
+- Dismiss Traders and Visitors when you no longer want them around.
 
-    Thank you to the translators!
-    - Ɲơɴɑɱɛ for German
-    - MossieuLeblanc for French
-    - Proxyer for Japanese
-    - Arex for Russian
-    - Fodnjs0811/Orange_Mushroom for Korean
-    - 53N4 - Spanish
-    - adam0310 - Polish
-    - SY1102 - ChineseTraditional
+-------- Update 2025/09/03 --------------
+I've been busy, this release has a lot of new features and improvements, exclusivley for 1.6.
+- Re-added original Dismiss functions so it applies to Traders and Visitors alike.
+- Added a Marketplace stall in place of the Trading Spot, allowing a more tailored experience if you want to build a dedicated trading area.
+    This stall was designed and provided by Ailailou-fi, with my thanks!
+- Added a Mood Buff / Trade Buff to the Marketplace, to encourage protecting the traders.
+- Fixed the Orbital Drop Beacon, so it properly targets the designated drop zones.
+- Fixed a bunch of issues with the settings.
+- Made all of the above configurable in the Settings, to some degree.
+- Updated Japanese translations, with thanks to Proxyer for his continued work.
+- Refactored the entire codebase for improved performance and maintainability.
+-----------------------------------------
 
-    Thank you to the Graphic Artist!
-    - ailailou-fi for the Marketplace images
+Thank you to the translators!
+- Ɲơɴɑɱɛ for German
+- MossieuLeblanc for French
+- Proxyer for Japanese
+- Arex for Russian
+- Fodnjs0811/Orange_Mushroom for Korean
+- 53N4 - Spanish
+- adam0310 - Polish
+- SY1102 - ChineseTraditional
 
-    Original Authors: TheUbie
+Thank you to the Graphic Artist!
+- ailailou-fi for the Marketplace images
+
+Original Authors: TheUbie
     </description>
     <packageId>TradingControl.Tad.Rimworld.Core</packageId>
     <modDependencies>
