@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TC_TradeBuff.label>取引バフ</TC_TradeBuff.label>
+  <TC_TradeBuff.description>付近の設置物が利用者の取引スキルを強化しています.</TC_TradeBuff.description>
+  <TC_TradeBuff.stages.0.label>値引き</TC_TradeBuff.stages.0.label>
+  <TC_TradeBuff.stages.1.label>抜け目ない</TC_TradeBuff.stages.1.label>
+  <TC_TradeBuff.stages.2.label>鋭い</TC_TradeBuff.stages.2.label>
+  <TC_TradeBuff.stages.3.label>利益</TC_TradeBuff.stages.3.label>
+  <TC_TradeBuff.stages.4.label>賢い</TC_TradeBuff.stages.4.label>
+  <TC_TradeBuff.stages.5.label>熟練</TC_TradeBuff.stages.5.label>
+  <TC_TradeBuff.labelNoun>取引バフ</TC_TradeBuff.labelNoun>
+
+
+</LanguageData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TradingSpot.label>トレード地点</TradingSpot.label>
+  <TradingSpot.description>キャラバントレーダーが,あなたのコロニーを訪れた時に,彼らが立ち寄る場所を指定します.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>トレード地点 (設計)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>トレード地点 (施工)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>キャラバントレーダーが,あなたのコロニーを訪れた時に,彼らが立ち寄る場所を指定します.</Frame_TradingSpot.description>
+
+
+  <!-- Add Marketplace -->
+
+  <Marketplace.label>市場</Marketplace.label>
+  <Marketplace.description>あなたのコロニーを訪れる際に,トレーダーが立ち寄る場所を指定します.</Marketplace.description>
+  <Blueprint_Marketplace.label>市場 (設計)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>市場 (施工)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>あなたのコロニーを訪れる際に,トレーダーが立ち寄る場所を指定します.</Frame_Marketplace.description>
+
+
+</LanguageData>

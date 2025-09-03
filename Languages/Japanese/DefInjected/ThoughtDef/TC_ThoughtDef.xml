@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TradeAura.stages.0.label>興味を持った商人</TradeAura.stages.0.label>
+  <TradeAura.stages.0.description>このコロニーは友好的に見えるので,取引を望んでいます！</TradeAura.stages.0.description>
+  <TradeAura.stages.1.label>社交的な商人</TradeAura.stages.1.label>
+  <TradeAura.stages.1.description>我々は商人であり,商品の価値と公正な交換の重要性を理解しています.</TradeAura.stages.1.description>
+  <TradeAura.stages.2.label>友好的な商人</TradeAura.stages.2.label>
+  <TradeAura.stages.2.description>ぜひ取引をしましょう！</TradeAura.stages.2.description>
+
+
+</LanguageData>
