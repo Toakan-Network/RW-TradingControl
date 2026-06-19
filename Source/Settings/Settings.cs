@@ -21,7 +21,7 @@ namespace TradingControl.Settings
         public bool RequiresWorkToPlace = true;
         public bool RequiresWorkToRemove = true;
         public int DefaultWorkValue = 500;
-        public bool UseSocialMoodTradeBuff = false;
+        public bool UseSocialMoodTradeBuff = true;
         public bool UseSocialAuraTradeBuff = true;
 
         public override void ExposeData()

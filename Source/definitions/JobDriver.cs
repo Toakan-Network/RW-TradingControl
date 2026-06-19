@@ -13,7 +13,7 @@ namespace TradingControl.definitions
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
-            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOn(() => (DismissTarget.lord.LordJob.GetType() != typeof(LordJob_VisitColony) && DismissTarget.lord.LordJob.GetType()  != typeof(LordJob_TradeWithColony)));
+            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOn(() => DismissTarget.lord?.LordJob is not LordJob_VisitColony && DismissTarget.lord?.LordJob is not LordJob_TradeWithColony);
             yield return new Toil
             {
                 initAction = delegate

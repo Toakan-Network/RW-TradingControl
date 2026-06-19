@@ -21,16 +21,14 @@ Trading Control now allows you to manage your local Visitors and Traders more ef
 - Dismiss Traders and Visitors when you no longer want them around.
 
 -------- Update 2025/09/03 --------------
-I've been busy, this release has a lot of new features and improvements, exclusivley for 1.6.
-- Re-added original Dismiss functions so it applies to Traders and Visitors alike.
-- Added a Marketplace stall in place of the Trading Spot, allowing a more tailored experience if you want to build a dedicated trading area.
-    This stall was designed and provided by Ailailou-fi, with my thanks!
-- Added a Mood Buff / Trade Buff to the Marketplace, to encourage protecting the traders.
-- Fixed the Orbital Drop Beacon, so it properly targets the designated drop zones.
-- Fixed a bunch of issues with the settings.
-- Made all of the above configurable in the Settings, to some degree.
-- Updated Japanese translations, with thanks to Proxyer for his continued work.
-- Refactored the entire codebase for improved performance and maintainability.
+Some quick fixes. They seem to work for me in testing.
+- Orbital drop spot now tries to land near the Orbital drop spot. 
+- Orbital drop spot also now punches through the roof, if you enable the setting.
+- Added some compat handling for Royalty paths, which should help above too.
+- Fixed the trade aura distance not being applied fully.
+- Changed dismiss to use Category lord-job rather than specific job. Should help with everyone getting the option to move on.
+- Mood buff enabled by default on the marketplace stall.
+- Migrated to latest C#.
 -----------------------------------------
 
 Thank you to the translators!

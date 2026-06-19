@@ -44,8 +44,8 @@ namespace TradingControl.definitions
             if (!(LoadedModManager.GetMod<TradingControlMod>().GetSettings<TradingControlSettings>().UseSocialMoodTradeBuff))
                 return ThoughtState.Inactive;
 
-
-            float nearestDist = MinAuraRadius;
+            // Initialize to a sentinel well beyond any aura range.
+            float nearestDist = float.MaxValue;
             // Find nearest building of trade type
             for (int d = 0; d < AuraBuildingDefs.Length; d++)
             {
@@ -65,8 +65,9 @@ namespace TradingControl.definitions
                 }
             }
 
-            if (nearestDist == MinAuraRadius)
-                return ThoughtState.Inactive; // no sources on map
+            // No trade buildings on map, or all are out of aura range.
+            if (nearestDist > MinAuraRadius)
+                return ThoughtState.Inactive;
 
             AuraLevel level = DetermineLevel(nearestDist);
             if (level == AuraLevel.None)
