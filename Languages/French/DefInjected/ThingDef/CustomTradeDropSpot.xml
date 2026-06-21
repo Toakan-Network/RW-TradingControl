@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DropSpotTradeShip.label>Point de largage orbital</DropSpotTradeShip.label>
+  <DropSpotTradeShip.description>Designe un emplacement ou les vaisseaux marchands larguent leurs marchandises pour votre colonie.</DropSpotTradeShip.description>
+  <Blueprint_DropSpotTradeShip.label>Point de largage orbital (plan)</Blueprint_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.label>Point de largage orbital (en construction)</Frame_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.description>Designe un emplacement ou les vaisseaux marchands larguent leurs marchandises pour votre colonie.</Frame_DropSpotTradeShip.description>
+</LanguageData>

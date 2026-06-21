@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <TradingControl>Trading Spot</TradingControl>
-  <TradingControl.AlreadyOnMap>マップごとにトレード地点は1ヶ所だけ許可されます.以前の場所は削除されます.</TradingControl.AlreadyOnMap>
-  <TradingControl.OrbitTraderAlreadyOnMap>マップごとに軌道投下地点は1ヵ所だけ許可されます.以前の地点は削除されます.</TradingControl.OrbitTraderAlreadyOnMap>
-  <TradingControl.TradersGoToTradeSpot>トレーダーをトレード地点に向かわせる</TradingControl.TradersGoToTradeSpot>
-  <TradingControl.VisitorsGoToTradeSpot>訪問者をトレード地点に向かわせる</TradingControl.VisitorsGoToTradeSpot>
-  <TradingControl.TradingSpotEnabled>トレード地点を有効にする？</TradingControl.TradingSpotEnabled>
-  <TradingControl.MaxTradeSpot>マップ上の最大トレード地点数：</TradingControl.MaxTradeSpot>
+  <TradingControl>取引地点</TradingControl>
+  <TradingControl.AlreadyOnMap>マップごとに取引地点は1か所だけ許可されます。以前の地点は削除されます。</TradingControl.AlreadyOnMap>
+  <TradingControl.OrbitTraderAlreadyOnMap>マップごとに軌道投下地点は1か所だけ許可されます。以前の地点は削除されます。</TradingControl.OrbitTraderAlreadyOnMap>
+  <TradingControl.TradersGoToTradeSpot>トレーダーを取引地点へ向かわせる</TradingControl.TradersGoToTradeSpot>
+  <TradingControl.VisitorsGoToTradeSpot>訪問者を取引地点へ向かわせる</TradingControl.VisitorsGoToTradeSpot>
+  <TradingControl.TradingSpotEnabled>取引地点を有効にしますか？</TradingControl.TradingSpotEnabled>
+  <TradingControl.MaxTradeSpot>マップ上の最大取引地点数：</TradingControl.MaxTradeSpot>
   <TradingControl.punchThroughEnabled>軌道投下は屋根を貫通しますか？</TradingControl.punchThroughEnabled>
-  <TradingControl.UseFlagMarker>取引地点にカスタムマーカーを使用しますか?</TradingControl.UseFlagMarker>
+  <TradingControl.UseFlagMarker>取引地点にカスタムマーカーを使用しますか？</TradingControl.UseFlagMarker>
   <TradingControl.Dismiss>送り返す：</TradingControl.Dismiss>
   <TradingControl.Def.Label>取引地点</TradingControl.Def.Label>
-  <TradingControl.Def.Description>訪問した商人がコロニーに来た際に立ち寄る場所を指定します.</TradingControl.Def.Description>
+  <TradingControl.Def.Description>商人がコロニーを訪れた際に立ち寄る場所を指定します。</TradingControl.Def.Description>
   <TradingControl.Settings.TitleLabel>取引地点の設定</TradingControl.Settings.TitleLabel>
-  <TradingControl.Settings.Description>取引地点の設定を構成します.</TradingControl.Settings.Description>
-  <TradingControl.Settings.Behaviour>取引地点の挙動を構成します.</TradingControl.Settings.Behaviour>
-  <TradingControl.Settings.OrbitalBehaviour>軌道投下地点の固有オプションを設定します</TradingControl.Settings.OrbitalBehaviour>
-  <TradingControl.Settings.RequireWorkToPlace>全ての取引地点の設置に作業を必要としますか?</TradingControl.Settings.RequireWorkToPlace>
-  <TradingControl.Settings.RequireWorkToRemove>全ての取引地点の撤去に作業を必要としますか?</TradingControl.Settings.RequireWorkToRemove>
+  <TradingControl.Settings.Description>取引地点の設定を構成します。</TradingControl.Settings.Description>
+  <TradingControl.Settings.Behaviour>取引地点の挙動を構成します。</TradingControl.Settings.Behaviour>
+  <TradingControl.Settings.OrbitalBehaviour>軌道投下地点の固有オプションを設定します。</TradingControl.Settings.OrbitalBehaviour>
+  <TradingControl.Settings.RequireWorkToPlace>全ての取引地点の設置に作業を必要としますか？</TradingControl.Settings.RequireWorkToPlace>
+  <TradingControl.Settings.RequireWorkToRemove>全ての取引地点の撤去に作業を必要としますか？</TradingControl.Settings.RequireWorkToRemove>
   <TradingControl.Settings.SocialBuffs>取引の社交バフ</TradingControl.Settings.SocialBuffs>
-  <TradingControl.Settings.UseSocialTradeMoodBuff>社交取引の気分バフを使用しますか?</TradingControl.Settings.UseSocialTradeMoodBuff>
-  <TradingControl.Settings.UseSocialTradeAuraBuff>社交取引のやる気バフを使用しますか?</TradingControl.Settings.UseSocialTradeAuraBuff>
+  <TradingControl.Settings.UseSocialTradeMoodBuff>社交取引の気分バフを使用しますか？</TradingControl.Settings.UseSocialTradeMoodBuff>
+  <TradingControl.Settings.UseSocialTradeAuraBuff>社交取引のオーラバフを使用しますか？</TradingControl.Settings.UseSocialTradeAuraBuff>
 
 </LanguageData>

@@ -1,7 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <TradingControl>交易點</TradingControl>
-  <TradingControl.AlreadyOnMap>每張地圖僅允許一個交易點。 去除舊點。</TradingControl.AlreadyOnMap>
-  <TradingControl.VisitorsGoToTradeSpot>參觀者去交易地點</TradingControl.VisitorsGoToTradeSpot>
-  <TradingControl.Dismiss>遣散: </TradingControl.Dismiss>
+  <TradingControl.AlreadyOnMap>每張地圖僅允許一個商隊交易點。已移除舊交易點。</TradingControl.AlreadyOnMap>
+  <TradingControl.OrbitTraderAlreadyOnMap>每張地圖僅允許一個軌道投放點。已移除舊投放點。</TradingControl.OrbitTraderAlreadyOnMap>
+  <TradingControl.TradersGoToTradeSpot>商人前往交易點</TradingControl.TradersGoToTradeSpot>
+  <TradingControl.VisitorsGoToTradeSpot>訪客前往交易點</TradingControl.VisitorsGoToTradeSpot>
+  <TradingControl.TradingSpotEnabled>啟用交易點？</TradingControl.TradingSpotEnabled>
+  <TradingControl.MaxTradeSpot>地圖上的最大交易點數量：</TradingControl.MaxTradeSpot>
+  <TradingControl.punchThroughEnabled>軌道投放可以穿透屋頂嗎？</TradingControl.punchThroughEnabled>
+  <TradingControl.UseFlagMarker>交易點使用自訂旗幟標記？</TradingControl.UseFlagMarker>
+  <TradingControl.Dismiss>遣返：</TradingControl.Dismiss>
+  <TradingControl.Def.Label>交易點</TradingControl.Def.Label>
+  <TradingControl.Def.Description>指定商人在造訪你的殖民地時會停留的地點。</TradingControl.Def.Description>
+  <TradingControl.Settings.TitleLabel>交易點設定</TradingControl.Settings.TitleLabel>
+  <TradingControl.Settings.Description>設定交易點的選項。</TradingControl.Settings.Description>
+  <TradingControl.Settings.Behaviour>設定交易點的行為。</TradingControl.Settings.Behaviour>
+  <TradingControl.Settings.OrbitalBehaviour>設定軌道投放點的專屬選項。</TradingControl.Settings.OrbitalBehaviour>
+  <TradingControl.Settings.RequireWorkToPlace>放置所有交易點都需要工作？</TradingControl.Settings.RequireWorkToPlace>
+  <TradingControl.Settings.RequireWorkToRemove>移除所有交易點都需要工作？</TradingControl.Settings.RequireWorkToRemove>
+  <TradingControl.Settings.SocialBuffs>交易社交加成</TradingControl.Settings.SocialBuffs>
+  <TradingControl.Settings.UseSocialTradeMoodBuff>啟用社交交易心情增益？</TradingControl.Settings.UseSocialTradeMoodBuff>
+  <TradingControl.Settings.UseSocialTradeAuraBuff>啟用社交交易光環增益？</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

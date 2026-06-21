@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <TradingControl.label>miejsce handlu</TradingControl.label>
-  <TradingControl.description>Wyznacza miejsce, w którym bedą zatrymywali się handlarze podczas odwiedzin w Twojej kolonii.</TradingControl.description>
+  <TradingSpot.label>Punkt handlowy karawany</TradingSpot.label>
+  <TradingSpot.description>Wyznacza miejsce, w którym handlarze zatrzymają się podczas wizyty w twojej kolonii.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>Punkt handlowy karawany (plan)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>Punkt handlowy karawany (w budowie)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>Wyznacza miejsce, w którym handlarze zatrzymają się podczas wizyty w twojej kolonii.</Frame_TradingSpot.description>
+  <Marketplace.label>Rynek</Marketplace.label>
+  <Marketplace.description>Wyznacza miejsce, w którym handlarze zatrzymają się podczas wizyty w twojej kolonii.</Marketplace.description>
+  <Blueprint_Marketplace.label>Rynek (plan)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>Rynek (w budowie)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>Wyznacza miejsce, w którym handlarze zatrzymają się podczas wizyty w twojej kolonii.</Frame_Marketplace.description>
 </LanguageData>

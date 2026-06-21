@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <TradingControl.label>торговое место</TradingControl.label>
-  <TradingControl.description>Обозначает место, где торговцы станут останавливаться при посещении поселения.</TradingControl.description>
-  <TradingControl_Blueprint.label>торговое место (проект)</TradingControl_Blueprint.label>
-  <TradingControl_Frame.label>торговое место (обустраивается)</TradingControl_Frame.label>
-  <TradingControl_Frame.description>Обозначает место, где торговцы станут останавливаться при посещении поселения.</TradingControl_Frame.description>
-
+  <TradingSpot.label>Караванная торговая точка</TradingSpot.label>
+  <TradingSpot.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>Караванная торговая точка (проект)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>Караванная торговая точка (строится)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Frame_TradingSpot.description>
+  <Marketplace.label>Рынок</Marketplace.label>
+  <Marketplace.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Marketplace.description>
+  <Blueprint_Marketplace.label>Рынок (проект)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>Рынок (строится)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Frame_Marketplace.description>
 </LanguageData>

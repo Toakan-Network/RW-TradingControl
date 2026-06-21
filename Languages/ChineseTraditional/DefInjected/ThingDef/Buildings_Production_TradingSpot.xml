@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <TradingControl.label>交易點</TradingControl.label>
-  <TradingControl.description>指定交易者在訪問您的殖民地時的停留地點。</TradingControl.description>
+  <TradingSpot.label>商隊交易點</TradingSpot.label>
+  <TradingSpot.description>指定商人在造訪你的殖民地時會停留的地點。</TradingSpot.description>
+  <Blueprint_TradingSpot.label>商隊交易點（藍圖）</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>商隊交易點（施工中）</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>指定商人在造訪你的殖民地時會停留的地點。</Frame_TradingSpot.description>
+  <Marketplace.label>市集</Marketplace.label>
+  <Marketplace.description>指定商人在造訪你的殖民地時會停留的地點。</Marketplace.description>
+  <Blueprint_Marketplace.label>市集（藍圖）</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>市集（施工中）</Frame_Marketplace.label>
+  <Frame_Marketplace.description>指定商人在造訪你的殖民地時會停留的地點。</Frame_Marketplace.description>
 </LanguageData>

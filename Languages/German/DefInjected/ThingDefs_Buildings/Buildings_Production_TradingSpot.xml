@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-	
-	<TradingControl.label>Handelsplatz</TradingControl.label>
-	<TradingControl.description>Bestimmt eine Stelle, wo Händler stoppen werden, wenn sie deine Kolonie besuchen.</TradingControl.description>
-	
-</LanguageData>

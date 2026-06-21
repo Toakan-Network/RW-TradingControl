@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DropSpotTradeShip.label>Orbitaler Abwurfplatz</DropSpotTradeShip.label>
+  <DropSpotTradeShip.description>Bestimmt einen Ort, an dem Handelsschiffe ihre Waren fuer deine Kolonie abwerfen.</DropSpotTradeShip.description>
+  <Blueprint_DropSpotTradeShip.label>Orbitaler Abwurfplatz (Bauplan)</Blueprint_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.label>Orbitaler Abwurfplatz (im Bau)</Frame_DropSpotTradeShip.label>
+  <Frame_DropSpotTradeShip.description>Bestimmt einen Ort, an dem Handelsschiffe ihre Waren fuer deine Kolonie abwerfen.</Frame_DropSpotTradeShip.description>
+</LanguageData>

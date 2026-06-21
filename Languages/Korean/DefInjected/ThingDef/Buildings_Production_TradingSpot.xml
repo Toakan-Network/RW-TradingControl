@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <TradingControl.label>거래 지정 장소</TradingControl.label>
-  <TradingControl.description>상인들이 정착지를 방문할때 잠시 머물 지점을 지정합니다.</TradingControl.description>
-  <TradingControl.label>거래 지정 장소 (청사진)</TradingControl.label>
-  <TradingControl.label>거래 지정 장소 (건설중)</TradingControl.label>
-  <TradingControl.description>상인들이 정착지를 방문할때 잠시 머물 지점을 지정합니다.</TradingControl.description>
-
+  <TradingSpot.label>상인 거래 지점</TradingSpot.label>
+  <TradingSpot.description>상인이 식민지를 방문할 때 멈추는 위치를 지정합니다.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>상인 거래 지점 (청사진)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>상인 거래 지점 (건설 중)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>상인이 식민지를 방문할 때 멈추는 위치를 지정합니다.</Frame_TradingSpot.description>
+  <Marketplace.label>시장</Marketplace.label>
+  <Marketplace.description>상인이 식민지를 방문할 때 멈추는 위치를 지정합니다.</Marketplace.description>
+  <Blueprint_Marketplace.label>시장 (청사진)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>시장 (건설 중)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>상인이 식민지를 방문할 때 멈추는 위치를 지정합니다.</Frame_Marketplace.description>
 </LanguageData>

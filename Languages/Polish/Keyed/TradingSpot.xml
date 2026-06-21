@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TradingControl>Trading Spot</TradingControl>
-	<TradingControl.AlreadyOnMap>Tylko jedno miejsce handlu dozwolone na mapę. Usuwanie starego miejsca.</TradingControl.AlreadyOnMap>
-	<TradingControl.VisitorsGoToTradeSpot>Goście udają się na miejsce handlu</TradingControl.VisitorsGoToTradeSpot>
-	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl>Punkt handlowy</TradingControl>
+	<TradingControl.AlreadyOnMap>Na mapie dozwolony jest tylko jeden punkt handlowy. Stary punkt zostanie usunięty.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>Na mapie dozwolony jest tylko jeden orbitalny punkt zrzutu. Stary punkt zostanie usunięty.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Handlarze kierują się do punktu handlowego</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Goście kierują się do punktu handlowego</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>Włączyć punkt handlowy?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Maksymalna liczba punktów handlowych na mapie: </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>Czy orbitalne zrzuty mogą przechodzić przez dachy?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>Użyć niestandardowego znacznika dla punktu handlowego?</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>Odpraw: </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Punkt handlowy</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Wyznacza miejsce, w którym handlarze zatrzymają się podczas wizyty w twojej kolonii.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Ustawienia punktu handlowego</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Skonfiguruj ustawienia punktu handlowego.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Skonfiguruj zachowanie punktów handlowych.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Skonfiguruj unikalne opcje orbitalnego punktu zrzutu.</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>Czy wymagać pracy do stawiania WSZYSTKICH punktów handlowych?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>Czy wymagać pracy do usuwania WSZYSTKICH punktów handlowych?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Społeczne premie handlowe</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Używać premii nastroju z handlu społecznego?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Używać premii aury z handlu społecznego?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

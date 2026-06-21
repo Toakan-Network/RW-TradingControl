@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TradingControl.AlreadyOnMap>Un seul lieu d'échange autorisé par carte. Suppression de l'ancien lieu.</TradingControl.AlreadyOnMap>
-	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl>Lieu de commerce</TradingControl>
+	<TradingControl.AlreadyOnMap>Un seul lieu de commerce est autorisé par carte. L'ancien lieu est supprimé.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>Un seul point de largage orbital est autorisé par carte. L'ancien point est supprimé.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Les marchands se rendent au lieu de commerce</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Les visiteurs se rendent au lieu de commerce</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>Activer le lieu de commerce ?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Nombre maximal de lieux de commerce sur la carte : </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>Les largages orbitaux peuvent-ils traverser les toits ?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>Utiliser un marqueur personnalisé pour le lieu de commerce ?</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>Renvoyer : </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Lieu de commerce</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Désigne un endroit où les marchands s'arrêteront en visitant votre colonie.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Paramètres du lieu de commerce</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Configurez les paramètres du lieu de commerce.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Configurez le comportement des lieux de commerce.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Configurez les options propres au point de largage orbital.</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>Exiger du travail pour placer TOUS les lieux de commerce ?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>Exiger du travail pour retirer TOUS les lieux de commerce ?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Bonus sociaux de commerce</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Utiliser le bonus d'humeur sociale du commerce ?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Utiliser le bonus d'aura sociale du commerce ?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

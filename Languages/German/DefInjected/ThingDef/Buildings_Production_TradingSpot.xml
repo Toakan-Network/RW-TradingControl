@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <TradingControl.label>Handelsplatz</TradingControl.label>
-  <TradingControl.description>Bestimmt eine Stelle, wo Händler stoppen werden, wenn sie deine Kolonie besuchen.</TradingControl.description>
-
+  <TradingSpot.label>Karawanen-Handelsplatz</TradingSpot.label>
+  <TradingSpot.description>Bestimmt einen Ort, an dem Haendler bei einem Besuch deiner Kolonie Halt machen.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>Karawanen-Handelsplatz (Bauplan)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>Karawanen-Handelsplatz (im Bau)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>Bestimmt einen Ort, an dem Haendler bei einem Besuch deiner Kolonie Halt machen.</Frame_TradingSpot.description>
+  <Marketplace.label>Marktplatz</Marketplace.label>
+  <Marketplace.description>Bestimmt einen Ort, an dem Haendler bei einem Besuch deiner Kolonie Halt machen.</Marketplace.description>
+  <Blueprint_Marketplace.label>Marktplatz (Bauplan)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>Marktplatz (im Bau)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>Bestimmt einen Ort, an dem Haendler bei einem Besuch deiner Kolonie Halt machen.</Frame_Marketplace.description>
 </LanguageData>

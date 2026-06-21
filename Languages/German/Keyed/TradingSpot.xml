@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TradingControl>Trading Spot</TradingControl>
-	<TradingControl.AlreadyOnMap>Nur einen Handelsplatz auf der Karte erlaubt. Der alte Handelsplatz wurde entfernt.</TradingControl.AlreadyOnMap>
-	<TradingControl.VisitorsGoToTradeSpot>Besucher gehen zum Handelsplatz.</TradingControl.VisitorsGoToTradeSpot>
-	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl>Handelsplatz</TradingControl>
+	<TradingControl.AlreadyOnMap>Pro Karte ist nur ein Handelsplatz erlaubt. Der alte Platz wird entfernt.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>Pro Karte ist nur ein orbitaler Abwurfplatz erlaubt. Der alte Platz wird entfernt.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Haendler steuern den Handelsplatz an</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Besucher steuern den Handelsplatz an</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>Handelsplatz aktivieren?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Maximale Anzahl an Handelsplaetzen auf der Karte: </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>Duerfen orbitale Abwuerfe durch Daecher gehen?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>Benutzerdefiniertes Symbol fuer den Handelsplatz verwenden?</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>Wegschicken: </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Handelsplatz</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Bestimmt einen Ort, an dem Haendler bei einem Besuch deiner Kolonie Halt machen.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Handelsplatz-Einstellungen</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Stelle die Optionen fuer den Handelsplatz ein.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Stelle das Verhalten der Handelsplaetze ein.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Stelle besondere Optionen fuer den orbitalen Abwurfplatz ein.</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>Arbeit zum Platzieren ALLER Handelsplaetze erforderlich?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>Arbeit zum Entfernen ALLER Handelsplaetze erforderlich?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Soziale Handelsboni</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Sozialen Handels-Stimmungsbuff verwenden?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Sozialen Handels-Aurabuff verwenden?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

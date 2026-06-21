@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <TradingControl.label>puesto de comercio</TradingControl.label>
-  <TradingControl.description>Designa un lugar donde los comerciantes se detendrán cuando visiten la colonia.</TradingControl.description>
-
+  <TradingSpot.label>Punto de comercio de caravana</TradingSpot.label>
+  <TradingSpot.description>Designa un lugar donde los comerciantes se detendrán al visitar tu colonia.</TradingSpot.description>
+  <Blueprint_TradingSpot.label>Punto de comercio de caravana (plano)</Blueprint_TradingSpot.label>
+  <Frame_TradingSpot.label>Punto de comercio de caravana (en construccion)</Frame_TradingSpot.label>
+  <Frame_TradingSpot.description>Designa un lugar donde los comerciantes se detendrán al visitar tu colonia.</Frame_TradingSpot.description>
+  <Marketplace.label>Mercado</Marketplace.label>
+  <Marketplace.description>Designa un lugar donde los comerciantes se detendrán al visitar tu colonia.</Marketplace.description>
+  <Blueprint_Marketplace.label>Mercado (plano)</Blueprint_Marketplace.label>
+  <Frame_Marketplace.label>Mercado (en construccion)</Frame_Marketplace.label>
+  <Frame_Marketplace.description>Designa un lugar donde los comerciantes se detendrán al visitar tu colonia.</Frame_Marketplace.description>
 </LanguageData>

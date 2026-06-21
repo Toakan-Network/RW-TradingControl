@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TradingControl.AlreadyOnMap>На карте разрешено лишь одно торговое место. Старое место удалено.</TradingControl.AlreadyOnMap>
-	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl>Торговая точка</TradingControl>
+	<TradingControl.AlreadyOnMap>На карте разрешена только одна торговая точка. Старая точка удаляется.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>На карте разрешена только одна орбитальная точка сброса. Старая точка удаляется.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Торговцы идут к торговой точке</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Посетители идут к торговой точке</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>Включить торговую точку?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Максимум торговых точек на карте: </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>Могут ли орбитальные сбросы проходить через крыши?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>Использовать пользовательский маркер для торговой точки?</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>Отправить: </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Торговая точка</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Настройки торговой точки</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Настройте параметры торговой точки.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Настройте поведение торговых точек.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Настройте особые параметры орбитальной точки сброса.</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>Требовать работу для установки ВСЕХ торговых точек?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>Требовать работу для удаления ВСЕХ торговых точек?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Социальные баффы торговли</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Использовать социальный бафф настроения от торговли?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Использовать социальный бафф ауры от торговли?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

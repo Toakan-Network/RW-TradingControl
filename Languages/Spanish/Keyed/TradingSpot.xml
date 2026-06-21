@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TradingControl.AlreadyOnMap>Sólo se permite un puesto de comercio por mapa. Eliminando puestos antiguos.</TradingControl.AlreadyOnMap>
-	<TradingControl.Dismiss>Dismiss: </TradingControl.Dismiss>
+	<TradingControl>Punto de comercio</TradingControl>
+	<TradingControl.AlreadyOnMap>Solo se permite un punto de comercio por mapa. Se eliminará el punto anterior.</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>Solo se permite un punto de entrega orbital por mapa. Se eliminará el punto anterior.</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>Los comerciantes se dirigen al punto de comercio</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>Los visitantes se dirigen al punto de comercio</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>¿Activar punto de comercio?</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>Cantidad máxima de puntos de comercio en el mapa: </TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>¿Las entregas orbitales pueden atravesar techos?</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>¿Usar marcador personalizado para el punto de comercio?</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>Despachar: </TradingControl.Dismiss>
+	<TradingControl.Def.Label>Punto de comercio</TradingControl.Def.Label>
+	<TradingControl.Def.Description>Designa un lugar donde los comerciantes se detendrán al visitar tu colonia.</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>Configuracion del punto de comercio</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>Configura las opciones del punto de comercio.</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>Configura el comportamiento de los puntos de comercio.</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>Configura opciones únicas para el punto de entrega orbital.</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>¿Requerir trabajo para colocar TODOS los puntos de comercio?</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>¿Requerir trabajo para quitar TODOS los puntos de comercio?</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>Bonos sociales de comercio</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>¿Usar bono social de estado de ánimo por comercio?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>¿Usar bono social de aura por comercio?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>
