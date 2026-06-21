@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <TradingSpot.label>Караванная торговая точка</TradingSpot.label>
-  <TradingSpot.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</TradingSpot.description>
-  <Blueprint_TradingSpot.label>Караванная торговая точка (проект)</Blueprint_TradingSpot.label>
-  <Frame_TradingSpot.label>Караванная торговая точка (строится)</Frame_TradingSpot.label>
-  <Frame_TradingSpot.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Frame_TradingSpot.description>
-  <Marketplace.label>Рынок</Marketplace.label>
-  <Marketplace.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Marketplace.description>
-  <Blueprint_Marketplace.label>Рынок (проект)</Blueprint_Marketplace.label>
-  <Frame_Marketplace.label>Рынок (строится)</Frame_Marketplace.label>
-  <Frame_Marketplace.description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</Frame_Marketplace.description>
+	<!-- 1.6\Defs\ThingDefs_Buildings\Buildings_Production_TradingSpot.xml -->
+	<!-- EN: Caravan Trade Spot -->
+	<TradingSpot.label>Место торговли караванов</TradingSpot.label>
+	<!-- EN: Designates a spot where traders will stop when visiting your colony. -->
+	<TradingSpot.description>Определяет место, где торговцы будут останавливаться при посещении вашего поселения.</TradingSpot.description>
+
+	<!-- EN: Marketplace -->
+	<Marketplace.label>Рынок</Marketplace.label>
+	<!-- EN: Designates a spot where traders will stop when visiting your colony. -->
+	<Marketplace.description>Определяет место, где торговцы будут останавливаться при посещении вашего поселения.</Marketplace.description>
 </LanguageData>

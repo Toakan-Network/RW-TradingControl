@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <DropSpotTradeShip.label>Орбитальная точка сброса</DropSpotTradeShip.label>
-  <DropSpotTradeShip.description>Обозначает место, куда торговые корабли сбрасывают товары для вашей колонии.</DropSpotTradeShip.description>
-  <Blueprint_DropSpotTradeShip.label>Орбитальная точка сброса (проект)</Blueprint_DropSpotTradeShip.label>
-  <Frame_DropSpotTradeShip.label>Орбитальная точка сброса (строится)</Frame_DropSpotTradeShip.label>
-  <Frame_DropSpotTradeShip.description>Обозначает место, куда торговые корабли сбрасывают товары для вашей колонии.</Frame_DropSpotTradeShip.description>
+	<!-- 1.6\Defs\ThingDefs_Buildings\CustomTradeDropSpot.xml -->
+	<!-- EN: Orbital Drop Spot -->
+	<DropSpotTradeShip.label>Место орбитальной высадки</DropSpotTradeShip.label>
+	<!-- EN: Designates a spot for trade ships to drop their items. -->
+	<DropSpotTradeShip.description>Определяет место, куда торговые корабли будут сбрасывать свои товары.</DropSpotTradeShip.description>
 </LanguageData>

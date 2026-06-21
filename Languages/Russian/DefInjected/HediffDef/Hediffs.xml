@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- 1.6\Defs\HediffDefs\Hediffs.xml -->
+	<!-- EN: trader buff -->
+	<TC_TradeBuff.label>усиление торговли</TC_TradeBuff.label>
+	<!-- EN: a trader buff -->
+	<TC_TradeBuff.labelNoun>усиление торговли</TC_TradeBuff.labelNoun>
+	<!-- EN: A nearby object is enhancing the user's Trading skills. -->
+	<TC_TradeBuff.description>Рядом находится объект, усиливающий навыки торговли носителя.</TC_TradeBuff.description>
+	<!-- EN: Bargain -->
+	<TC_TradeBuff.stages.0.label>Торг</TC_TradeBuff.stages.0.label>
+	<!-- EN: Savvy -->
+	<TC_TradeBuff.stages.1.label>Знание дела</TC_TradeBuff.stages.1.label>
+	<!-- EN: Shrewd -->
+	<TC_TradeBuff.stages.2.label>Проницательность</TC_TradeBuff.stages.2.label>
+	<!-- EN: Profit -->
+	<TC_TradeBuff.stages.3.label>Прибыль</TC_TradeBuff.stages.3.label>
+	<!-- EN: Clever -->
+	<TC_TradeBuff.stages.4.label>Хитрость</TC_TradeBuff.stages.4.label>
+	<!-- EN: Expert -->
+	<TC_TradeBuff.stages.5.label>Эксперт</TC_TradeBuff.stages.5.label>
+</LanguageData>

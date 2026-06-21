@@ -1,24 +1,45 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
-	<TradingControl>Торговая точка</TradingControl>
-	<TradingControl.AlreadyOnMap>На карте разрешена только одна торговая точка. Старая точка удаляется.</TradingControl.AlreadyOnMap>
-	<TradingControl.OrbitTraderAlreadyOnMap>На карте разрешена только одна орбитальная точка сброса. Старая точка удаляется.</TradingControl.OrbitTraderAlreadyOnMap>
-	<TradingControl.TradersGoToTradeSpot>Торговцы идут к торговой точке</TradingControl.TradersGoToTradeSpot>
-	<TradingControl.VisitorsGoToTradeSpot>Посетители идут к торговой точке</TradingControl.VisitorsGoToTradeSpot>
-	<TradingControl.TradingSpotEnabled>Включить торговую точку?</TradingControl.TradingSpotEnabled>
-	<TradingControl.MaxTradeSpot>Максимум торговых точек на карте: </TradingControl.MaxTradeSpot>
-	<TradingControl.punchThroughEnabled>Могут ли орбитальные сбросы проходить через крыши?</TradingControl.punchThroughEnabled>
-	<TradingControl.UseFlagMarker>Использовать пользовательский маркер для торговой точки?</TradingControl.UseFlagMarker>
-	<TradingControl.Dismiss>Отправить: </TradingControl.Dismiss>
-	<TradingControl.Def.Label>Торговая точка</TradingControl.Def.Label>
-	<TradingControl.Def.Description>Обозначает место, где торговцы будут останавливаться при посещении вашей колонии.</TradingControl.Def.Description>
-	<TradingControl.Settings.TitleLabel>Настройки торговой точки</TradingControl.Settings.TitleLabel>
-	<TradingControl.Settings.Description>Настройте параметры торговой точки.</TradingControl.Settings.Description>
-	<TradingControl.Settings.Behaviour>Настройте поведение торговых точек.</TradingControl.Settings.Behaviour>
-	<TradingControl.Settings.OrbitalBehaviour>Настройте особые параметры орбитальной точки сброса.</TradingControl.Settings.OrbitalBehaviour>
-	<TradingControl.Settings.RequireWorkToPlace>Требовать работу для установки ВСЕХ торговых точек?</TradingControl.Settings.RequireWorkToPlace>
-	<TradingControl.Settings.RequireWorkToRemove>Требовать работу для удаления ВСЕХ торговых точек?</TradingControl.Settings.RequireWorkToRemove>
-	<TradingControl.Settings.SocialBuffs>Социальные баффы торговли</TradingControl.Settings.SocialBuffs>
-	<TradingControl.Settings.UseSocialTradeMoodBuff>Использовать социальный бафф настроения от торговли?</TradingControl.Settings.UseSocialTradeMoodBuff>
-	<TradingControl.Settings.UseSocialTradeAuraBuff>Использовать социальный бафф ауры от торговли?</TradingControl.Settings.UseSocialTradeAuraBuff>
+	<!-- EN: Trading Spot -->
+	<TradingControl>Место торговли</TradingControl>
+	<!-- EN: Only one Caravan trading spot allowed per map. Removing old spot. -->
+	<TradingControl.AlreadyOnMap>На карте разрешено только одно место торговли караванов. Старое место будет удалено.</TradingControl.AlreadyOnMap>
+	<!-- EN: Only one Orbital drop spot allowed per map. Removing old spot. -->
+	<TradingControl.OrbitTraderAlreadyOnMap>На карте разрешено только одно место для орбитальной высадки. Старое место будет удалено.</TradingControl.OrbitTraderAlreadyOnMap>
+	<!-- EN: Traders go to Trading Spot -->
+	<TradingControl.TradersGoToTradeSpot>Торговцы идут к месту торговли</TradingControl.TradersGoToTradeSpot>
+	<!-- EN: Visitors go to Trading Spot -->
+	<TradingControl.VisitorsGoToTradeSpot>Посетители идут к месту торговли</TradingControl.VisitorsGoToTradeSpot>
+	<!-- EN: Enable Trading Spot? -->
+	<TradingControl.TradingSpotEnabled>Включить место торговли?</TradingControl.TradingSpotEnabled>
+	<!-- EN: Maximum Trading spots on the map:   -->
+	<TradingControl.MaxTradeSpot>Максимальное количество мест торговли на карте:  </TradingControl.MaxTradeSpot>
+	<!-- EN: Can orbital drops go through roofs? -->
+	<TradingControl.punchThroughEnabled>Может ли орбитальная высадка проходить сквозь крыши?</TradingControl.punchThroughEnabled>
+	<!-- EN: Use Custom marker for trading spot? -->
+	<TradingControl.UseFlagMarker>Использовать особый маркер для места торговли?</TradingControl.UseFlagMarker>
+	<!-- EN: Dismiss:  -->
+	<TradingControl.Dismiss>Отпустить: </TradingControl.Dismiss>
+	<!-- EN: Trading Spot -->
+	<TradingControl.Def.Label>Место торговли</TradingControl.Def.Label>
+	<!-- EN: Designates a spot where traders will stop when visiting your colony. -->
+	<TradingControl.Def.Description>Определяет место, где торговцы будут останавливаться при посещении вашего поселения.</TradingControl.Def.Description>
+	<!-- EN: Trading Spot Settings -->
+	<TradingControl.Settings.TitleLabel>Настройки места торговли</TradingControl.Settings.TitleLabel>
+	<!-- EN: Configure the settings for the Trading Spot. -->
+	<TradingControl.Settings.Description>Настройка параметров для места торговли.</TradingControl.Settings.Description>
+	<!-- EN: Configure the behavior of the Trading Spots. -->
+	<TradingControl.Settings.Behaviour>Настройка поведения мест торговли.</TradingControl.Settings.Behaviour>
+	<!-- EN: Configure unique options for the Orbital Drop Spot -->
+	<TradingControl.Settings.OrbitalBehaviour>Настройка параметров для места орбитальной высадки</TradingControl.Settings.OrbitalBehaviour>
+	<!-- EN: Require work to place ALL Trading Spots? -->
+	<TradingControl.Settings.RequireWorkToPlace>Требовать работу для размещения ВСЕХ мест торговли?</TradingControl.Settings.RequireWorkToPlace>
+	<!-- EN: Require work to remove ALL Trading Spots? -->
+	<TradingControl.Settings.RequireWorkToRemove>Требовать работу для удаления ВСЕХ мест торговли?</TradingControl.Settings.RequireWorkToRemove>
+	<!-- EN: Trading Social Buffs -->
+	<TradingControl.Settings.SocialBuffs>Социальные бонусы от торговли</TradingControl.Settings.SocialBuffs>
+	<!-- EN: Use Social Trade Mood Buff? -->
+	<TradingControl.Settings.UseSocialTradeMoodBuff>Использовать бонус к настроению от социальной торговли?</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<!-- EN: Use Social Trade Aura Buff? -->
+	<TradingControl.Settings.UseSocialTradeAuraBuff>Использовать бонус ауры от социальной торговли?</TradingControl.Settings.UseSocialTradeAuraBuff>
 </LanguageData>

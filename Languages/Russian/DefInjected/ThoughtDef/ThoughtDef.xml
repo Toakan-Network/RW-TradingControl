@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- 1.6\Defs\ThoughtDefs\ThoughtDef.xml -->
+	<!-- EN: Curious Traders -->
+	<TradeAura.stages.0.label>Любопытные торговцы</TradeAura.stages.0.label>
+	<!-- EN: The colony seems friendly and wants to trade! -->
+	<TradeAura.stages.0.description>Поселение кажется дружелюбным и готово к торговле!</TradeAura.stages.0.description>
+	<!-- EN: Social Traders -->
+	<TradeAura.stages.1.label>Общительные торговцы</TradeAura.stages.1.label>
+	<!-- EN: We are traders, and we understand the value of goods and the importance of fair exchange. -->
+	<TradeAura.stages.1.description>Мы торговцы, мы понимаем ценность товаров и важность честного обмена.</TradeAura.stages.1.description>
+	<!-- EN: Friendly Traders -->
+	<TradeAura.stages.2.label>Дружелюбные торговцы</TradeAura.stages.2.label>
+	<!-- EN: Let's make a deal! -->
+	<TradeAura.stages.2.description>Давайте договоримся!</TradeAura.stages.2.description>
+</LanguageData>
