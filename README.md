@@ -22,6 +22,10 @@ Original Authors:
 - TheUbie Original Developer[ludeon.com]
 - Kiame (Maintaining the original release to 1.5).
 
+License Change:
+v1.0 - v1.5    MIT
+v1.6 onwards   Tom Daykin Source Available License
+
 Thank you to the translators!
 - Ɲơɴɑɱɛ for German
 - MossieuLeblanc for French
