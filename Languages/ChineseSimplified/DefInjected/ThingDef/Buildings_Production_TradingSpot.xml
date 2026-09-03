@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<TradingSpot.label>商队交易点</TradingSpot.label>
+	<TradingSpot.description>指定一个地点，商队到访你的殖民地时会在此停留。</TradingSpot.description>
+
+	<Marketplace.label>集市</Marketplace.label>
+	<Marketplace.description>指定一个地点，商队到访你的殖民地时会在此停留。</Marketplace.description>
+
+</LanguageData>

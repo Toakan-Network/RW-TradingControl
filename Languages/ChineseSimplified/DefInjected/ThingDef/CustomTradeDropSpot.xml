@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<DropSpotTradeShip.label>轨道投放点</DropSpotTradeShip.label>
+	<DropSpotTradeShip.description>指定一个地点，轨道贸易飞船的货物会投放至此。</DropSpotTradeShip.description>
+
+</LanguageData>
