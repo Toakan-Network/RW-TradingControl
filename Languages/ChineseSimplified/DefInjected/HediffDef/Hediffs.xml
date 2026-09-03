@@ -9,10 +9,10 @@
     <TC_TradeBuff.description>附近的物体正在提升使用者的交易技能。</TC_TradeBuff.description>
 
     <TC_TradeBuff.stages.0.label>讨价还价</TC_TradeBuff.stages.0.label>
-    <TC_TradeBuff.stages.0.label>精明</TC_TradeBuff.stages.0.label>
-    <TC_TradeBuff.stages.1.label>老练</TC_TradeBuff.stages.0.label>
-    <TC_TradeBuff.stages.1.label>盈利</TC_TradeBuff.stages.0.label>
-    <TC_TradeBuff.stages.2.label>机智</TC_TradeBuff.stages.0.label>
-    <TC_TradeBuff.stages.2.label>专家</TC_TradeBuff.stages.0.label>
+    <TC_TradeBuff.stages.1.label>精明</TC_TradeBuff.stages.1.label>
+    <TC_TradeBuff.stages.2.label>老练</TC_TradeBuff.stages.2.label>
+    <TC_TradeBuff.stages.3.label>盈利</TC_TradeBuff.stages.3.label>
+    <TC_TradeBuff.stages.4.label>机智</TC_TradeBuff.stages.4.label>
+    <TC_TradeBuff.stages.5.label>专家</TC_TradeBuff.stages.5.label>
 
-  </LanguageData>
+</LanguageData>
