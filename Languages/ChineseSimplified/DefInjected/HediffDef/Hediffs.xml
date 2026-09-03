@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-    <TC_TraderBuff.label>交易增益</TC_TraderBuff.label>
-    <TC_TraderBuff.description>附近的物体正在提升使用者的交易技能。</TC_TraderBuff.description>
-
     <TC_TradeBuff.label>交易增益</TC_TradeBuff.label>
     <TC_TradeBuff.labelNoun>一个交易增益</TC_TradeBuff.labelNoun>
     <TC_TradeBuff.description>附近的物体正在提升使用者的交易技能。</TC_TradeBuff.description>
