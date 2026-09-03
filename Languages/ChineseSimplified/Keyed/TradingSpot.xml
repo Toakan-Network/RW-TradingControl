@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<TradingControl>Trading Spot</TradingControl>
+	<TradingControl>交易点</TradingControl>
 	<TradingControl.AlreadyOnMap>每张地图只允许建造一个商队交易点，已移除旧交易点。</TradingControl.AlreadyOnMap>
 	<TradingControl.OrbitTraderAlreadyOnMap>每张地图只允许建造一个轨道投放点，已移除旧投放点。</TradingControl.OrbitTraderAlreadyOnMap>
 	<TradingControl.TradersGoToTradeSpot>商人前往交易点</TradingControl.TradersGoToTradeSpot>
@@ -10,7 +10,7 @@
 	<TradingControl.MaxTradeSpot>地图上最大交易点数量：</TradingControl.MaxTradeSpot>
 	<TradingControl.punchThroughEnabled>轨道投放能否穿透屋顶？</TradingControl.punchThroughEnabled>
 	<TradingControl.UseFlagMarker>使用自定义旗帜来标记交易点？</TradingControl.UseFlagMarker>
-	<TradingControl.Dismiss>遣散</TradingControl.Dismiss>
+	<TradingControl.Dismiss>遣散：</TradingControl.Dismiss>
 	<TradingControl.Def.Label>交易点</TradingControl.Def.Label>
 	<TradingControl.Def.Description>指定一个地点，商队到访你的殖民地时会在此停留。</TradingControl.Def.Description>
 	<TradingControl.Settings.TitleLabel>交易点设置</TradingControl.Settings.TitleLabel>
