@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<TradingControl>交易点</TradingControl>
+	<TradingControl.AlreadyOnMap>每张地图只允许建造一个商队交易点，已移除旧交易点。</TradingControl.AlreadyOnMap>
+	<TradingControl.OrbitTraderAlreadyOnMap>每张地图只允许建造一个轨道投放点，已移除旧投放点。</TradingControl.OrbitTraderAlreadyOnMap>
+	<TradingControl.TradersGoToTradeSpot>商人前往交易点</TradingControl.TradersGoToTradeSpot>
+	<TradingControl.VisitorsGoToTradeSpot>访客前往交易点</TradingControl.VisitorsGoToTradeSpot>
+	<TradingControl.TradingSpotEnabled>启用交易点？</TradingControl.TradingSpotEnabled>
+	<TradingControl.MaxTradeSpot>地图上最大交易点数量：</TradingControl.MaxTradeSpot>
+	<TradingControl.punchThroughEnabled>轨道投放能否穿透屋顶？</TradingControl.punchThroughEnabled>
+	<TradingControl.UseFlagMarker>使用自定义旗帜来标记交易点？</TradingControl.UseFlagMarker>
+	<TradingControl.Dismiss>遣散：</TradingControl.Dismiss>
+	<TradingControl.Def.Label>交易点</TradingControl.Def.Label>
+	<TradingControl.Def.Description>指定一个地点，商队到访你的殖民地时会在此停留。</TradingControl.Def.Description>
+	<TradingControl.Settings.TitleLabel>交易点设置</TradingControl.Settings.TitleLabel>
+	<TradingControl.Settings.Description>配置交易点的设置</TradingControl.Settings.Description>
+	<TradingControl.Settings.Behaviour>配置交易点的行为</TradingControl.Settings.Behaviour>
+	<TradingControl.Settings.OrbitalBehaviour>配置轨道投送点的独特选项</TradingControl.Settings.OrbitalBehaviour>
+	<TradingControl.Settings.RequireWorkToPlace>放置所有交易点是否需要工作？</TradingControl.Settings.RequireWorkToPlace>
+	<TradingControl.Settings.RequireWorkToRemove>移除所有交易点是否需要工作？</TradingControl.Settings.RequireWorkToRemove>
+	<TradingControl.Settings.SocialBuffs>交易社交增益</TradingControl.Settings.SocialBuffs>
+	<TradingControl.Settings.UseSocialTradeMoodBuff>使用社交交易心情增益？</TradingControl.Settings.UseSocialTradeMoodBuff>
+	<TradingControl.Settings.UseSocialTradeAuraBuff>使用社交交易光环增益？</TradingControl.Settings.UseSocialTradeAuraBuff>
+	
+</LanguageData>
